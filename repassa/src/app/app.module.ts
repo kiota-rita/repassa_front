@@ -3,12 +3,16 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { CadastroComponent } from './cadastro/cadastro.component';
+
+import { DenyLoginComponent } from './deny-login/deny-login.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
-    CadastroComponent
+
+    DenyLoginComponent
+
   ],
   imports: [
     BrowserModule,
