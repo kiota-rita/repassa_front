@@ -1,0 +1,56 @@
+#img-bg{
+    background-image: url('https://i.imgur.com/Nk7EwvT.png');
+    min-height: 880px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1{
+    color:black;
+}
+
+/*formulario*/
+button {
+    background: #61297c;
+    font-size: 12pt;
+    border-radius: 10px;
+    width: 100pt;
+    box-shadow: #d6d2c4 5px 5px 7px;
+    color: white;
+    font-weight: 500;
+  }
+  
+  #botaoCancelar {
+    background: #fedc18;
+    color: #61297c;
+  }
+  
+  #botaoEnter {
+    color: white;
+  }
+  
+  button:hover {
+    background: #4f2166;
+    color: #fedc18;
+  }
+  
+  #botaoCancelar:hover {
+    background: #e7bd00f6;
+    color: #ff147c;
+  }
+  
+  input,
+  select {
+    border-radius: 10px;
+    background: #e5e5e5;
+    box-shadow: #d6d2c4 5px 5px 7px;
+    height: 45px;
+    font-family: "Roboto", sans-serif;
+    font-size: 12pt;
+  }
+  
+  label {
+    font-family: "Roboto", sans-serif;
+    font-size: 14pt;
+  }
