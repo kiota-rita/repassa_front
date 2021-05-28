@@ -3,16 +3,15 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { SobreComponent } from './sobre/sobre.component';
 
-import { DenyLoginComponent } from './deny-login/deny-login.component';
+import { EquipeComponent } from './equipe/equipe.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    SobreComponent,
 
+    EquipeComponent,
 
   ],
   imports: [
