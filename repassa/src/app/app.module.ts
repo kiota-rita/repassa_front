@@ -11,6 +11,7 @@ import { CadastroComponent } from './cadastro/cadastro.component';
 import { DenyLoginComponent } from './deny-login/deny-login.component';
 import { SobreComponent } from './sobre/sobre.component';
 import { MissaoComponent } from './missao/missao.component';
+import { VisaoComponent } from './visao/visao.component';
 
 
 @NgModule({
@@ -23,7 +24,8 @@ import { MissaoComponent } from './missao/missao.component';
     DenyLoginComponent,
     SobreComponent,
     EquipeComponent,
-    MissaoComponent
+    MissaoComponent,
+    VisaoComponent
 
   ],
   imports: [
