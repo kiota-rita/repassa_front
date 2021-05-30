@@ -10,6 +10,7 @@ import { EquipeComponent } from './equipe/equipe.component';
 import { CadastroComponent } from './cadastro/cadastro.component';
 import { DenyLoginComponent } from './deny-login/deny-login.component';
 import { SobreComponent } from './sobre/sobre.component';
+import { MissaoComponent } from './missao/missao.component';
 
 
 @NgModule({
@@ -21,7 +22,8 @@ import { SobreComponent } from './sobre/sobre.component';
     CadastroComponent,
     DenyLoginComponent,
     SobreComponent,
-    EquipeComponent
+    EquipeComponent,
+    MissaoComponent
 
   ],
   imports: [
