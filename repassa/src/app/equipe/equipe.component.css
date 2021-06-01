@@ -1,9 +1,24 @@
-.tm-perfil {
-    width: 200px;
-    height: 200px;
-}
-
-.tm-social {
-    width: 70px;
-    height: 70px;
-}
+ 
+.card {
+    border: none;
+  }
+   
+  .perfil {
+    width: 250px;
+    height: 250px;
+    border-radius: 20px;
+  }
+   
+   
+  .tm-social {
+    max-width: 75px;
+    max-height: 75px;
+    border-radius: 20px;
+  }
+   
+  .logo-social:hover {
+    transform: scale(1.2);
+    transition: transform 0.3s ease-out;
+    cursor: pointer;
+  }
+  
