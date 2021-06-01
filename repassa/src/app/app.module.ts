@@ -7,6 +7,9 @@ import { MenuComponent } from './menu/menu.component';
 import { RodapeComponent } from './rodape/rodape.component';
 
 import { EquipeComponent } from './equipe/equipe.component';
+import { CadastroComponent } from './cadastro/cadastro.component';
+import { DenyLoginComponent } from './deny-login/deny-login.component';
+import { SobreComponent } from './sobre/sobre.component';
 
 
 @NgModule({
@@ -14,7 +17,11 @@ import { EquipeComponent } from './equipe/equipe.component';
     AppComponent,
 
     MenuComponent,
-    RodapeComponent
+    RodapeComponent,
+    CadastroComponent,
+    DenyLoginComponent,
+    SobreComponent,
+    EquipeComponent
 
   ],
   imports: [
