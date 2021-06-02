@@ -1,4 +1,5 @@
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
 
@@ -11,6 +12,8 @@ import { EquipeComponent } from './equipe/equipe.component';
 import { CadastroComponent } from './cadastro/cadastro.component';
 import { DenyLoginComponent } from './deny-login/deny-login.component';
 import { SobreComponent } from './sobre/sobre.component';
+import { InicioComponent } from './inicio/inicio.component';
+
 
 
 
@@ -23,13 +26,15 @@ import { SobreComponent } from './sobre/sobre.component';
     CadastroComponent,
     DenyLoginComponent,
     SobreComponent,
-    EquipeComponent
+    EquipeComponent,
+    InicioComponent
 
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
     
   ],
   providers: [],

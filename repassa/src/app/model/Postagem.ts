@@ -9,4 +9,5 @@ export class Postagem {
     public data: Date
     public user: User
     public tema: Tema
+    
 }
