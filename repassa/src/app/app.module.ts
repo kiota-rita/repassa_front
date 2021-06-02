@@ -12,6 +12,7 @@ import { EquipeComponent } from './equipe/equipe.component';
 import { CadastroComponent } from './cadastro/cadastro.component';
 import { DenyLoginComponent } from './deny-login/deny-login.component';
 import { SobreComponent } from './sobre/sobre.component';
+import { InicioComponent } from './inicio/inicio.component';
 
 
 
@@ -25,7 +26,8 @@ import { SobreComponent } from './sobre/sobre.component';
     CadastroComponent,
     DenyLoginComponent,
     SobreComponent,
-    EquipeComponent
+    EquipeComponent,
+    InicioComponent
 
   ],
   imports: [
