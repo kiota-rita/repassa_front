@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -10,6 +11,7 @@ import { EquipeComponent } from './equipe/equipe.component';
 import { CadastroComponent } from './cadastro/cadastro.component';
 import { DenyLoginComponent } from './deny-login/deny-login.component';
 import { SobreComponent } from './sobre/sobre.component';
+
 
 
 @NgModule({
@@ -26,7 +28,9 @@ import { SobreComponent } from './sobre/sobre.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
