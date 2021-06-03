@@ -1,0 +1,52 @@
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+h1{
+  font-size: 40pt;
+}
+
+#repassa{
+  color: #61297c;
+}
+
+.fs-25{
+  font-size: 25pt;
+}
+
+a {
+  color: #61297c;
+  font-weight: bold;
+}
+a:hover {
+  text-decoration: none;
+  color: #3a0d3d;
+}
+
+.btn-lg {
+  border-radius: 10px;
+  background: #61297c;;
+  color: white;
+  height: 45px;
+  font-size: 12pt;
+}
+
+.btn-lg:hover {
+  background: #ffb81c;
+  border-color: #ffb81c;
+  color: black;
+  font-weight: bold;
+}
+.titulo{
+  color: #61297c;
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.quemSomos-font {
+  font-size: 18px;
+  text-align: justify;
+}
+
+
