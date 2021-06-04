@@ -23,7 +23,6 @@ Após ter iniciado o backend, conforme repositório citado acima, siga as instru
 
 ### 🟢 Equipe:
 
-|  Denysson Max |  Rafaela Machado |   [Rita Kiota] (https://github.com/kiota-rita)   |  Vinícius da Silva |  Washington Albuquerque |
+|  Denysson Max |  Rafaela Machado | <sub> Rita Kiota </sub>](https://github.com/kiota-rita) |  Vinícius da Silva |  Washington Albuquerque |
 |:-:|---|---|---|---|
-| ![](https://...Dark.png)   | ![](https://...Dark.png)   | ![](https://i.imgur.com/YYSigFO.jpg)   | ![](https://...Dark.png)   |![](https://...Dark.png)    |
-
+| ![](https://...Dark.png)   | ![](https://...Dark.png)   | <img src="https://avatars.githubusercontent.com/u/79403191?v=4" width=115 >  | ![](https://...Dark.png)   |![](https://...Dark.png)    |
