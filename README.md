@@ -21,7 +21,7 @@ Após ter iniciado o backend, conforme repositório citado acima, siga as instru
 * Faça a instalação do Node e rode o comando npm install;
 * Rode o comando ng serve e o frontend será iniciado no http://localhost:4200/ automaticamente.
 
-### 🔴 Equipe:
+### 🧑‍💻 Equipe:
 
 | [<img src="https://avatars.githubusercontent.com/u/80558287?v=4" width=115><br><sub>Denysson Max</sub>](https://github.com/DenyssonMax) |  [<img src="https://avatars.githubusercontent.com/u/80546287?v=4" width=115><br><sub>Rafaela Machado</sub>](https://github.com/rafaelamachadocamara)|  [<img src="https://avatars.githubusercontent.com/u/79403191?v=4" width=115><br><sub>Rita Kiota</sub>](https://github.com/kiota-rita) | [<img src="https://avatars.githubusercontent.com/u/80286718?v=4" width=115><br><sub>Vinícius da Silva</sub>](https://github.com/ViniciusSP1995) | [<img src="https://avatars.githubusercontent.com/u/80684961?v=4" width=115><br><sub>Washington Albuquerque</sub>](https://github.com/AlbuquerqueMouraW) |
 | :---: | :---: | :---: | :---: | :---:
