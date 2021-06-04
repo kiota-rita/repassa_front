@@ -21,6 +21,9 @@ Após ter iniciado o backend, conforme repositório citado acima, siga as instru
 * Faça a instalação do Node e rode o comando npm install;
 * Rode o comando ng serve e o frontend será iniciado no http://localhost:4200/ automaticamente.
 
-Solarized dark             |  Solarized Ocean
-:-------------------------:|:-------------------------:
-![](https://...Dark.png)  |  ![](https://...Ocean.png)
+### 🟢 Equipe:
+
+|  Denysson Max |  Rafaela Machado |   Rita Kiota   |  Vinícius da Silva |  Washington Albuquerque |
+|:-:|---|---|---|---|
+| ![](https://...Dark.png)   | ![](https://...Dark.png)   | ![](https://...Dark.png)   | ![](https://...Dark.png)   |![](https://...Dark.png)    |
+
