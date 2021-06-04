@@ -23,6 +23,12 @@ Após ter iniciado o backend, conforme repositório citado acima, siga as instru
 
 ### 🟢 Equipe:
 
-|  Denysson Max |  Rafaela Machado | <sub> Rita Kiota </sub>](https://github.com/kiota-rita) |  Vinícius da Silva |  Washington Albuquerque |
+|  Denysson Max |  Rafaela Machado | <sub> Rita Kiota </sub>(https://github.com/kiota-rita) |  Vinícius da Silva |  Washington Albuquerque |
 |:-:|---|---|---|---|
 | ![](https://...Dark.png)   | ![](https://...Dark.png)   | <img src="https://avatars.githubusercontent.com/u/79403191?v=4" width=115 >  | ![](https://...Dark.png)   |![](https://...Dark.png)    |
+
+
+[<img src="https://avatars2.githubusercontent.com/u/46378210?s=400&u=071f7791bb03f8e102d835bdb9c2f0d3d24e8a34&v=" width=115 > <br> <sub> Diana Regina </sub>](https://github.com/Diana-ops) |
+| :---: |  [<img src="https://avatars2.githubusercontent.com/u/46378210?s=400&u=071f7791bb03f8e102d835bdb9c2f0d3d24e8a34&v=" width=115 > <br> <sub> Diana Regina </sub>](https://github.com/Diana-ops) |
+| :---: |  [<img src="https://avatars2.githubusercontent.com/u/46378210?s=400&u=071f7791bb03f8e102d835bdb9c2f0d3d24e8a34&v=" width=115 > <br> <sub> Diana Regina </sub>](https://github.com/Diana-ops) |
+| :---: |  
