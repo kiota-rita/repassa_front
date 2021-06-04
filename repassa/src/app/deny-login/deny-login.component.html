@@ -22,7 +22,7 @@
                         <label for="email">
                             <h4>Email</h4>
                         </label>
-                        <input login="" class="form-control" type="email" name="email" id="email"
+                        <input [(ngModel)]='userLogin.email' login="" class="form-control" type="email" name="email" id="email"
                         placeholder="exemplo@exemplo.com">
                     </div>
 
@@ -30,23 +30,19 @@
                         <label for="senha">
                             <h4>Senha </h4>
                         </label>
-                        <input class="form-control" type="password" name="senha" id="senha"
+                        <input [(ngModel)]='userLogin.senha' class="form-control" type="password" name="senha" id="senha"
                         placeholder="Digite sua senha">
                     </div>
 
                     <div class="d-flex justify-content-center mt-4">
-                        <button id="botaoentrar" type="submit" class="btn mt-2">Entrar</button>
+                        <button (click)='entrar()' id="botaoentrar" type="submit" class="btn mt-2">Entrar</button>
                     </div>
 
                     <hr class="mt-4 mb-2">
 
                     <p class="text-center">
                         Ainda não tem cadastro?  
-<<<<<<< HEAD
-                        <a id="linkfora" href="">Registre-se</a>
-=======
-                        <a routerLink='/cadastro' id="linkfora">Registre-se</a>
->>>>>>> 8d5a9940fbf8c01e04c6059c67e391a66696dedf
+                        <a id="linkfora" routerLink="/cadastro">Cadastre-se</a>
                     </p>
 
                     <p class="text-center">
@@ -68,7 +64,3 @@
 </div>
 
 
-<<<<<<< HEAD
-
-=======
->>>>>>> 8d5a9940fbf8c01e04c6059c67e391a66696dedf
