@@ -25,7 +25,7 @@ Após ter iniciado o backend, conforme repositório citado acima, siga as instru
 
 |  Denysson Max |  Rafaela Machado | Rita Kiota |  Vinícius da Silva |  Washington <br> Albuquerque |
 |:-:|---|---|---|---|
-| <img src="https://avatars.githubusercontent.com/u/80558287?v=4" width=115 >| <img src="https://avatars.githubusercontent.com/u/80546287?v=4" width=115 > | <img src="https://avatars.githubusercontent.com/u/79403191?v=4" width=115 >  | <img src="https://avatars.githubusercontent.com/u/80286718?v=4" width=115 >  |<img src="https://avatars.githubusercontent.com/u/80684961?v=4" width=115 >  (https://github.com/Diana-ops) |
+| <img src="https://avatars.githubusercontent.com/u/80558287?v=4" width=115 >| <img src="https://avatars.githubusercontent.com/u/80546287?v=4" width=115 > | <img src="https://avatars.githubusercontent.com/u/79403191?v=4" width=115 >  | <img src="https://avatars.githubusercontent.com/u/80286718?v=4" width=115 >  |<img src="https://avatars.githubusercontent.com/u/80684961?v=4" width=115 > |
 
 
 
