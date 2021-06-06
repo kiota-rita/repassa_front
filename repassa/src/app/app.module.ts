@@ -16,6 +16,7 @@ import { SobreComponent } from './sobre/sobre.component';
 import { MissaoComponent } from './missao/missao.component';
 
 import { VisaoComponent } from './visao/visao.component';
+import { ValoresComponent } from './valores/valores.component';
 import { InicioComponent } from './inicio/inicio.component';
 
 
@@ -33,6 +34,7 @@ import { InicioComponent } from './inicio/inicio.component';
     EquipeComponent,
     MissaoComponent,
     VisaoComponent,
+    ValoresComponent,
     InicioComponent
 
   ],
