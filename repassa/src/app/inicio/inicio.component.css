@@ -43,6 +43,25 @@ body {
     cursor: pointer;
 }
 
+.share-logo img{
+    height: 25px;
+    width: 25px;
+    padding: 2px;
+    margin-right: 14px;
+    
+    color: #d2c8c8;
+    cursor: pointer
+}
+
+.share-logo img:hover {
+    transform: scale(1.5);
+    transition: transform 0.3s ease-out;
+    cursor: pointer;
+}
+
+
+
+
 
 .feed-image img {
     width: 100%;
