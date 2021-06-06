@@ -42,21 +42,6 @@
         color: #000;
         font-size: 1.1em;
     }
-
-    .content .textBox a{
-        background: #fedc18;
-        font-size: 17pt;
-        border-radius: 20px;
-        width: 115pt;
-        box-shadow: #d6d2c4 5px 5px 7px;
-        color: #61297c;
-        font-weight: 900px;
-        }
-
-        .content .textBox a:hover{
-            background: #e7bd00f6;
-            color: #ff147c;
-        }
         
     .content .imgBox{
         width: 600px;

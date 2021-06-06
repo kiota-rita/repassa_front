@@ -1,9 +1,28 @@
-.tm-perfil {
-    width: 200px;
-    height: 200px;
-}
+ 
+.card {
+    border: none;
+  }
+   
+  .perfil {
+    width: 250px;
+    height: 250px;
+    border-radius: 20px;
+  }
 
-.tm-social {
-    width: 70px;
-    height: 70px;
-}
+  .titulo-equipe{
+    color: #61297c;
+  }
+   
+   
+  .tm-social {
+    max-width: 60px;
+    max-height: 60px;
+    border-radius: 20px;
+  }
+   
+  .logo-social:hover {
+    transform: scale(1.2);
+    transition: transform 0.3s ease-out;
+    cursor: pointer;
+  }
+  
