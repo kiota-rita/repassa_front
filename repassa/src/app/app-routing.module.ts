@@ -5,6 +5,8 @@ import { logging } from 'selenium-webdriver';
 import { CadastroComponent } from './cadastro/cadastro.component';
 import { InicioComponent } from './inicio/inicio.component';
 import { TemaComponent } from './tema/tema.component';
+import { TemaEditComponent } from './tema-edit/tema-edit.component';
+import { TemaDeleteComponent } from './tema-delete/tema-delete.component';
 
 const routes: Routes = [
   {path: '', redirectTo: 'login', pathMatch: 'full'},
@@ -13,7 +15,9 @@ const routes: Routes = [
  {path: 'cadastro', component: CadastroComponent},
 
  {path: 'inicio', component: InicioComponent},
- {path: 'tema', component: TemaComponent}
+ {path: 'tema', component: TemaComponent},
+ {path: 'tema-edit/:id', component: TemaEditComponent},
+ {path: 'tema-delete/:id', component: TemaDeleteComponent}
 
 
 ];

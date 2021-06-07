@@ -15,14 +15,14 @@
 
     <div class="row mb-5">
         <div class="col-md-12">
-            <h5 class="text-center" id="tema">Tema:</h5>
+            <h5 class="text-center" id="tema">Tema: {{tema.descricao}}</h5>
         </div>
     </div>
 
     <div class="row">
         <div class="col-md-12 d-flex justify-content-center">
-            <button class="btn mr-4" id="botao-nao">Não</button>
-            <button class="btn btn-danger" id="botao-sim" >Sim</button>
+            <button routerLink='/tema' class="btn mr-4" id="botao-nao">Não</button>
+            <button (click)='apagar()' class="btn btn-danger" id="botao-sim" >Sim</button>
 
         </div>
     </div>
