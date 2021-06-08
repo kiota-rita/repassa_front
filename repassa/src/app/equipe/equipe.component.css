@@ -8,11 +8,15 @@
     height: 250px;
     border-radius: 20px;
   }
+
+  .titulo-equipe{
+    color: #61297c;
+  }
    
    
   .tm-social {
-    max-width: 75px;
-    max-height: 75px;
+    max-width: 60px;
+    max-height: 60px;
     border-radius: 20px;
   }
    

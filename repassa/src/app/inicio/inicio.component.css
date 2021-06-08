@@ -1,0 +1,73 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap);
+*
+
+{
+    
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #eee
+}
+
+#botaoentrar {
+    background: #4f2166;
+    font-size: 12pt;
+    border-radius: 10px;
+    width: 100pt;
+    font-weight: 500;
+    box-shadow: #d6d2c4 5px 5px 7px;
+    color: #ffffff;
+}
+#botaoentrar:hover {
+    background: #fedc18;
+    color: #4f2166;
+  }
+
+.time {
+    font-size: 9px !important
+}
+
+.socials img {
+    height: 25px;
+    width: 25px;
+    padding: 3px;
+    margin-right: 14px;
+    color: #d2c8c8;
+    cursor: pointer
+}
+
+.socials img:hover {
+    transform: scale(1.5);
+    transition: transform 0.3s ease-out;
+    cursor: pointer;
+}
+
+.share-logo img{
+    height: 25px;
+    width: 25px;
+    padding: 2px;
+    margin-right: 14px;
+    
+    color: #d2c8c8;
+    cursor: pointer
+}
+
+.share-logo img:hover {
+    transform: scale(1.5);
+    transition: transform 0.3s ease-out;
+    cursor: pointer;
+}
+
+
+
+
+
+.feed-image img {
+    width: 100%;
+    height: auto
+}
+
+.reacoes{
+    padding: 3px;
+}
