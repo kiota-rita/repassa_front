@@ -9,6 +9,7 @@ import { HomeComponent } from './home/home.component';
 import { TemaComponent } from './tema/tema.component';
 import { TemaEditComponent } from './tema-edit/tema-edit.component';
 import { TemaDeleteComponent } from './tema-delete/tema-delete.component';
+import { SobreComponent } from './sobre/sobre.component';
 
 
 const routes: Routes = [
@@ -17,14 +18,12 @@ const routes: Routes = [
  {path: 'login', component: DenyLoginComponent},
  {path: 'cadastro', component: CadastroComponent},
 
- {path: 'inicio', component: InicioComponent},
-
- {path: 'home', component: HomeComponent}
-
+ {path: 'home', component: HomeComponent},
  {path: 'inicio', component: InicioComponent},
  {path: 'tema', component: TemaComponent},
  {path: 'tema-edit/:id', component: TemaEditComponent},
- {path: 'tema-delete/:id', component: TemaDeleteComponent}
+ {path: 'tema-delete/:id', component: TemaDeleteComponent},
+ {path: 'sobre', component: SobreComponent}
 
 ];
 

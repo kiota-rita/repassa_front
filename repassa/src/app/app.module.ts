@@ -38,7 +38,7 @@ import { TemaDeleteComponent } from './tema-delete/tema-delete.component';
     SobreComponent,
     EquipeComponent,
     InicioComponent,
-    HomeComponent
+    HomeComponent,
 
     MissaoComponent,
     VisaoComponent,
