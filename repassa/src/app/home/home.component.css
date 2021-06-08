@@ -29,6 +29,7 @@ a:hover {
   color: white;
   height: 45px;
   font-size: 12pt;
+  box-shadow: #d6d2c4 5px 5px 7px;
 }
 
 .btn-lg:hover {
@@ -47,6 +48,10 @@ a:hover {
 .quemSomos-font {
   font-size: 18px;
   text-align: justify;
+}
+
+.card{
+  box-shadow: #d6d2c4 5px 5px 5px;
 }
 
 
