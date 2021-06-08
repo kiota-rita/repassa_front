@@ -31,13 +31,15 @@ button {
   }
   
   button:hover {
-    background: #4f2166;
-    color: #fedc18;
+    background: #ffb81c;
+    border-color: #ffb81c;
+    color: black;
+    font-weight: bold;
   }
   
   #botaoCancelar:hover {
     background: #e7bd00f6;
-    color: #ff147c;
+    color: black;
   }
   
   input,
@@ -51,6 +53,6 @@ button {
   }
   
   label {
-    font-family: "Roboto", sans-serif;
+    font-family: "Poppins", sans-serif;
     font-size: 14pt;
   }
