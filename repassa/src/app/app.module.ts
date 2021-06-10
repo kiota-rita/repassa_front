@@ -25,7 +25,6 @@ import { TemaEditComponent } from './tema-edit/tema-edit.component';
 import { TemaDeleteComponent } from './tema-delete/tema-delete.component';
 import { PostagemEditComponent } from './edit/postagem-edit/postagem-edit.component';
 import { PostagemDeleteComponent } from './delete/postagem-delete/postagem-delete.component';
-import { OrderModule } from 'ngx-order-pipe';
 
 
 
@@ -59,8 +58,7 @@ import { OrderModule } from 'ngx-order-pipe';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule,
-    OrderModule
+    FormsModule
     
   ],
   providers: [],
