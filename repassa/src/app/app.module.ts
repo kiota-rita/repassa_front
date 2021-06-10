@@ -29,6 +29,10 @@ import { PostagemDeleteComponent } from './delete/postagem-delete/postagem-delet
 import { AlertasComponent } from './alertas/alertas.component';
 
 
+import { UserEditComponent } from './edit/user-edit/user-edit.component';
+import { OrderModule } from 'ngx-order-pipe';
+
+
 
 
 
@@ -54,16 +58,19 @@ import { AlertasComponent } from './alertas/alertas.component';
     TemaDeleteComponent,
     PostagemEditComponent,
     PostagemDeleteComponent,
-    AlertasComponent
-
+    AlertasComponent,
+    UserEditComponent
 
   ],
+  
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
     FormsModule,
-    ModalModule.forRoot()
+    ModalModule.forRoot(),
+    OrderModule
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
