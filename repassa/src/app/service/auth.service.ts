@@ -26,5 +26,8 @@ export class AuthService {
 
   }
 
+  getByIdUser(id: number): Observable<User>{
+    return this.http.get<User>(`${environment.server}/usuario/${id}`)
+  }
 
 }
