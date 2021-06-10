@@ -44,7 +44,7 @@
                                         class="iconbuscar" src="https://i.imgur.com/2kGNjeH.png" />
                                     Vídeo <input type="button" hidden />
                                 </label>
-                                
+
 
                             </div>
                         </div>
@@ -58,9 +58,9 @@
                             aria-selected="true">Todas as
                             Postagens</a>
 
-                        <a (click)='findByIdUser()' class="nav-item nav-link font-weight-bold navstyle" id="nav-minhasPostagens-tab"
-                            data-toggle="tab" href="#minhasPostagens" role="tab" aria-controls="nav-minhasPostagens"
-                            aria-selected="false">Minhas Postagens</a>
+                        <a (click)='findByIdUser()' class="nav-item nav-link font-weight-bold navstyle"
+                            id="nav-minhasPostagens-tab" data-toggle="tab" href="#minhasPostagens" role="tab"
+                            aria-controls="nav-minhasPostagens" aria-selected="false">Minhas Postagens</a>
                     </div>
                 </nav>
 
@@ -68,20 +68,40 @@
                     <!-- Todas as Postagens -->
                     <div class="tab-pane fade show active" id="todasPostagens" role="tabpanel"
                         aria-labelledby="nav-todasPostagens-tab">
+
+
+                        <div class="row d-flex justify-content-center mt-5 mb-5">
+                            <div class="col-md-5">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="titulo"
+                                        placeholder="Buscar postagem por título" [(ngModel)]='tituloPost'
+                                        (keyup)='findByTituloPostagem()'>
+                                </div>
+                            </div>
+                        </div>
+
+
+
                         <div class="row align-items-center">
+
+                            <div class="card border-secondary mt-3 mb-3 w-100 bodypost"
+                                *ngFor='let item of listaPostagens'>
+
                             <div class="card border-secondary mt-3 mb-3 w-100 bodypost" *ngFor='let item of listaPostagens | orderBy: key : reverse'> <!--for aqui-->
+
                                 <div class="card-header color-header border-secondary">
                                     <div class=" d-flex justify-content-between align-items-center">
                                         <div class="d-flex justify-content-between align-items-center ">
                                             <div class="mr-2">
-                                                <img class="rounded-circle" src="{{user.foto}}" alt="Imagem do user" width="50px"
-                                                    height="50px" class="rounded-circle">
+                                                <img class="rounded-circle" src="{{user.foto}}" alt="Imagem do user"
+                                                    width="50px" height="50px" class="rounded-circle">
                                             </div>
                                             <div class="ml-2 mt-2">
                                                 <div class="h5 m-0 postfonth"></div>
                                                 <div class="h7 text-muted">
                                                     <p class="text-muted"> <i class="fa fa-clock-o"
-                                                            aria-hidden="true"></i>{{item.data | date: 'dd/MM/yyyy'}} às {{item.data | date: 'HH:mm'}}</p>
+                                                            aria-hidden="true"></i>{{item.data | date: 'dd/MM/yyyy'}} às
+                                                        {{item.data | date: 'HH:mm'}}</p>
                                                 </div>
                                             </div>
 
@@ -89,7 +109,8 @@
 
                                         <div class="d-flex justify-content-end">
                                             <h5 class="mtema">
-                                                <span class="tema-font">tema:{{item.tema.descricao}}</span> <img src="" class="iconcard1">
+                                                <span class="tema-font">tema:{{item.tema.descricao}}</span> <img src=""
+                                                    class="iconcard1">
                                             </h5>
                                         </div>
                                     </div>
@@ -101,7 +122,7 @@
 
                                     <img src="{{item.img}}" width="100%" height="100%" alt="" />
 
-                                   <!--  <div class="container">
+                                    <!--  <div class="container">
                                         <div class="row config-video">
                                             <iframe width="560" height="315" title="YouTube video player"
                                                 frameborder="0"
@@ -122,19 +143,26 @@
                     <div class="tab-pane fade show active" id="minhasPostagens" role="tabpanel"
                         aria-labelledby="nav-minhasPostagens-tab">
                         <div class="row align-items-center">
+
+                            <div class="card border-secondary mt-3 mb-3 w-100 bodypost"
+                                *ngFor='let item of user.postagem'>
+
                             <div class="card border-secondary mt-3 mb-3 w-100 bodypost" *ngFor='let item of user.postagem | orderBy: key : reverse'> <!--for aqui-->
+
                                 <div class="card-header color-header border-secondary">
                                     <div class="d-flex justify-content-between align-items-center">
                                         <div class="d-flex justify-content-between align-items-center">
                                             <div class="mr-2">
-                                                <img class="rounded-circle" width="45" src="{{foto}}" alt="Imagem do user"
-                                                    width="50px" height="50px" class="rounded-circle">
+                                                <img class="rounded-circle" width="45" src="{{foto}}"
+                                                    alt="Imagem do user" width="50px" height="50px"
+                                                    class="rounded-circle">
                                             </div>
                                             <div class="ml-2 mt-2">
                                                 <div class="h5 m-0 postfonth"></div>
                                                 <div class="h7 text-muted">
                                                     <p class="text-muted"> <i class="fa fa-clock-o"
-                                                            aria-hidden="true"></i>{{item.data | date: 'dd/MM/yyyy'}} às {{item.data | date: 'HH:mm'}} </p>
+                                                            aria-hidden="true"></i>{{item.data | date: 'dd/MM/yyyy'}} às
+                                                        {{item.data | date: 'HH:mm'}} </p>
                                                 </div>
                                             </div>
                                         </div>
@@ -146,9 +174,11 @@
                                             </button>
                                             <div class="dropdown-menu dropdown-menu-right" aria-labelledby="gedf-drop1">
 
-                                                <a [routerLink]="['/postagem-edit', item.id]"class="text-info dropdown-item">Editar <i
+                                                <a [routerLink]="['/postagem-edit', item.id]"
+                                                    class="text-info dropdown-item">Editar <i
                                                         class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
-                                                <a [routerLink]="['/postagem-delete', item.id]" class="text-danger dropdown-item">Excluir <i class="fa fa-trash-o"
+                                                <a [routerLink]="['/postagem-delete', item.id]"
+                                                    class="text-danger dropdown-item">Excluir <i class="fa fa-trash-o"
                                                         aria-hidden="true"></i></a>
                                             </div>
                                         </div>
@@ -157,7 +187,8 @@
 
                                     </div>
                                     <h5 class="mtema m-0">
-                                        <span class="tema-font">tema: tema:{{item.tema.descricao}}</span> <img src="" class="iconcard1">
+                                        <span class="tema-font">tema: tema:{{item.tema.descricao}}</span> <img src=""
+                                            class="iconcard1">
                                     </h5>
                                 </div>
 
