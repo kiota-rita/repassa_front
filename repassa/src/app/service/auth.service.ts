@@ -30,4 +30,5 @@ export class AuthService {
     return this.http.get<User>(`${environment.server}/usuario/${id}`)
   }
 
+
 }

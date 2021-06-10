@@ -1,0 +1,63 @@
+<div class="container-fluid">
+    <div class="row">
+        <!--Div imagem bg-->
+        <div class="col-md-6" id="img-bg"></div>
+        <!--Div imagem bg-->
+
+        <!--div do formulario-->
+        <div class="col-md-6 mt-5 mb-5">
+            <div class="row d-flex justify-content-center">
+                <div class="col-md-10">
+
+                    <!--Logo-->
+                    <div class="d-flex justify-content-center mb-4">
+                      <img
+                        style="width: 25%"
+                        class="d-flex justify-content-center"
+                        src="https://i.imgur.com/5KOEUob.png"
+                        alt="Logo repassa"
+                      />
+                    </div>
+                    <!--Logo-->
+
+                    <!--texto-->
+                    <h1 class="text-center">Atualize seu cadastro!</h1>
+                    <!--texto-->
+
+                    <!--Formulario-->
+                    <div class="form-group">
+                        <label for="nome">Nome</label>
+                        <input [(ngModel)]='user.nome' class="form-control" type="text" name="nome" id="nome" placeholder="Seu nome">
+                    </div>
+                    <div class="form-group">
+                        <label for="usuario">Email</label>
+                        <input [(ngModel)]='user.email' class="form-control" type="text" name="usuario" id="usuario" placeholder="Seu melhor email">
+                    </div>
+                    <div class="form-group">
+                        <label for="foto">Link da foto</label>
+                        <input [(ngModel)]='user.foto' class="form-control" type="text" name="foto" id="foto" placeholder="link da sua foto">
+                    </div>
+                    <div class="form-group">
+                        <label for="senha">Senha</label>
+                        <input (input)='confirmSenha($event)' class="form-control" type="password" name="senha" id="senha" placeholder="Sua senha">
+                    </div>
+                    <div class="form-group">
+                        <label for="confirmarSenha">Confirmar senha</label>
+                        <input [(ngModel)]='user.senha' class="form-control" type="password" name="confimrarSenha" id="confirmarSenha" placeholder="Confirme sua senha">
+                    </div>
+
+                    <!--botões-->
+
+                    <hr class="mt-4 mb-2">
+                    
+                    <div class="mt-5 d-flex justify-content-center">
+                        <button type="submit" class="btn mr-4" id="botaoCancelar" routerLink='/inicio'>Cancelar</button>
+                        <button  (click)='atualizar()' type="submit" class="btn">Atualizar</button>
+                    </div>
+                    <!--botões-->
+                </div>
+            </div>
+        </div>
+        <!--div do formulario-->
+    </div>
+</div>
