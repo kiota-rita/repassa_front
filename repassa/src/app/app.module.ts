@@ -18,6 +18,8 @@ import { MissaoComponent } from './missao/missao.component';
 import { VisaoComponent } from './visao/visao.component';
 import { ValoresComponent } from './valores/valores.component';
 import { InicioComponent } from './inicio/inicio.component';
+import { HomeComponent } from './home/home.component';
+
 import { TemaComponent } from './tema/tema.component';
 import { TemaEditComponent } from './tema-edit/tema-edit.component';
 import { TemaDeleteComponent } from './tema-delete/tema-delete.component';
@@ -37,6 +39,9 @@ import { PostagemDeleteComponent } from './delete/postagem-delete/postagem-delet
     DenyLoginComponent,
     SobreComponent,
     EquipeComponent,
+    InicioComponent,
+    HomeComponent,
+
     MissaoComponent,
     VisaoComponent,
     ValoresComponent,
@@ -46,6 +51,7 @@ import { PostagemDeleteComponent } from './delete/postagem-delete/postagem-delet
     TemaDeleteComponent,
     PostagemEditComponent,
     PostagemDeleteComponent
+
 
   ],
   imports: [
