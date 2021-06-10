@@ -28,7 +28,7 @@ export class PostagemService {
   }
 
   putPostagem(postagem: Postagem): Observable<Postagem>{
-    return this.http.put<Postagem>(`${environment.server}/postagem`, this.token)
+    return this.http.put<Postagem>(`${environment.server}/postagem`, postagem, this.token)
   }
 
   deletePostagem(id: number){

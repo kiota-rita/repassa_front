@@ -1,1 +1,32 @@
-<p>postagem-delete works!</p>
+<div class="container mb-5 mt-5">
+
+    <div class="row mb-5">
+        <div class="col md-12">
+            <h1 class="text-center" id="tema-apagar">Apagar postagem</h1>
+        </div>
+    </div>
+
+    <div class="row mb-3">
+        <div class="col-md-12">
+            <h4 class="text-center">Você tem certeza que deseja apagar essa postagem?</h4>
+            <h4 class="text-center">Todas as postagens relacionadas a ele serão igualmente apagadas.</h4>
+        </div>
+    </div>
+
+    <div class="row mb-5">
+        <div class="col-md-12">
+            <div class="col-md-12">
+                <h5 class="text-center" id="tema">Título: {{postagem.titulo}}</h5>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12 d-flex justify-content-center">
+            <button routerLink='/inicio' class="btn mr-4" id="botao-nao">Não</button>
+            <button (click)='apagar()' class="btn btn-danger" id="botao-sim" >Sim</button>
+
+        </div>
+    </div>
+
+</div>
