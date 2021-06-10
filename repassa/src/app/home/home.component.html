@@ -1,3 +1,56 @@
+<!--Nav-->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
+  <span class="navbar-toggler-icon"></span>
+ </button>
+
+ <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
+      <ul class="navbar-nav mr-auto d-flex align-items-center">
+
+          <li class="nav-item active">
+         <!--definir imagem logo-->
+          <img src="https://i.imgur.com/5KOEUob.png" alt="Logo Repassa" width ="80px" height="80px" class="img-fluid" >
+         <!--/definir imagem logo-->
+          </li>
+      </ul>
+
+      <ul class="navbar-nav ml-auto d-flex align-items-center">
+
+          <!--Inicio-->
+          <li class="nav-item active">
+          <a class="p-3 colorFont selecao font-weight-bold" href="#">Início <span class="sr-only">(página atual)</span></a>
+          </li>
+          <!--/Inicio-->
+
+          <!--SobreNós-->
+          <li class="nav-item">
+          <a class="p-3 colorFont selecao font-weight-bold"  href="#">Sobre</a>
+          </li>
+          <!--/SobreNós-->
+
+          <!--Equipe-->
+          <li class="nav-item">
+          <a class="p-3 colorFont selecao font-weight-bold" href="#">Equipe</a>
+          </li>
+          <!--/Equipe-->
+
+          <!--Cadastre-se-->
+          <li class="nav-item">
+          <a class="p-3 colorFont selecao font-weight-bold" routerLink='/cadastro'>Cadastre-se</a>
+          </li>
+          <!--/Cadastre-se-->
+
+          <!--BotãoEntrar-->
+          <li class="nav-item">
+          <button class="btn btn-sm btn-outline-warning" type="submit" routerLink='/login'>Entrar <i class="fa fa-sign-in" aria-hidden="true"></i> </button>
+          </li>
+          <!--BotãoEntrar-->
+
+      </ul>
+  </div>
+</nav>
+<!--Nav-->
+
 <div class="container-fluid">
     <div class="row pb-4">
       <div class="col-md-6 d-flex justify-content-center align-items-center flex-column">
@@ -96,8 +149,161 @@
         </div>
       </div>
       <!--cards-->
+    </div>   
+</div>
 
+<!--Equipe-->
+<div class="container-flex mb-5">
+  <div class="row mt-5">
+    <div class="col-md-12 mb-4">
+      <h2 class="text-center titulo-equipe">Conheça nossa equipe!</h2>
+    </div>
+
+    <!-- primeira fileira-->
+    <div class="col-md-12 d-flex justify-content-center">
+      <div class="card mr-5">
+        <img class="card-img-top perfil" src="./assets/img/deny.jpg" alt="Denysson" />
+        <div class="text-center mt-3">
+          <h5 class="card-title">Denysson Max</h5>
+          <a href="https://www.https://github.com/DenyssonMax/" target="_blank"><img class="logo-social tm-social p-2"
+              src="./assets/img/git-roxo.png" alt="Git Deny"></a>
+          <a href="https://www.linkedin.com/in/denyssonmax/" target="_blank"><img class="logo-social tm-social p-2"
+              src="./assets/img/linkedin-roxo.png" alt="Linkedin Deny"></a>
+        </div>
+      </div>
+      <div class="card mr-5">
+        <img class="card-img-top perfil" src="./assets/img/rafa.jpg" alt="Rafaela" />
+        <div class="text-center mt-3">
+          <h5 class="card-title">Rafaela Machado</h5>
+          <a href="https://github.com/rafaelamachadocamara" target="_blank"><img class="logo-social tm-social p-2"
+              src="./assets/img/git-roxo.png" alt="Git Rafa"></a>
+          <a href="https://www.linkedin.com/in/rafaelamachado-camara/" target="_blank"><img
+              class="logo-social tm-social p-2" src="./assets/img/linkedin-roxo.png" alt="Linkedin Rafa"></a>
+        </div>
+      </div>
+      <div class="card">
+        <img class="card-img-top perfil" src="./assets/img/rita.jpg" alt="Rita" />
+        <div class="text-center mt-3">
+          <h5 class="card-title">Rita Kiota</h5>
+          <a href="https://github.com/kiota-rita" target="_blank"><img class="logo-social tm-social p-2"
+              src="./assets/img/git-roxo.png" alt="Git Rita"></a>
+          <a href="https://www.linkedin.com/in/kiotarita/" target="_blank"><img class="logo-social tm-social p-2"
+              src="./assets/img/linkedin-roxo.png" alt="Linkedin Rita"></a>
+        </div>
+      </div>
+    </div>
+    <!-- /primeira fileira -->
+
+    <!-- segunda fileira -->
+    <div class="col-md-12  d-flex justify-content-center mt-5">
+      <div class="card mr-5">
+        <img class="card-img-top perfil" src="./assets/img/vini.jpg" alt="Vinicius" />
+        <div class="text-center mt-3">
+          <h5 class="card-title">Vinícius da Silva</h5>
+          <a href="https://github.com/ViniciusSP1995" target="_blank"><img class="logo-social tm-social p-2"
+              src="./assets/img/git-roxo.png" alt="Git Vinicius"></a>
+
+          <a href="https://www.linkedin.com/in/vin%C3%ADcius-da-silva-609ba2170/" target="_blank"><img
+              class="logo-social tm-social p-2" src="./assets/img/linkedin-roxo.png" alt="Linkedin Vinicius"></a>
+        </div>
+      </div>
+      <div class="card">
+        <img class="card-img-top perfil" src="./assets/img/was.jpg" alt="Washington" />
+        <div class="text-center mt-3">
+          <h5 class="card-title">Washington Albuquerque</h5>
+          <a href="https://github.com/AlbuquerqueMouraW" target="_blank"><img class="logo-social tm-social p-2"
+              src="./assets/img/git-roxo.png" alt="Git Washington"></a>
+          <a href="https://www.linkedin.com/in/washington-albuquerque-729223aa/" target="_blank"><img
+              class="logo-social tm-social p-2" src="./assets/img/linkedin-roxo.png" alt="Linkedin Washington"></a>
+        </div>
+      </div>
+    </div>
+    <!-- /segunda fileira -->
+  </div>
+</div>
+<!--Equipe-->
+
+<!--footer-->
+<hr> 
+
+<footer class ="page-footer font-small bg-light pt-4">
+
+    <!--Rodapé-->
+    <div class="container">
+
+            <div class="row">
+                <!--TituloRepassa-->
+                <div class="col-md-4 justify-content-center">
+                    <h5 class="colorFont"> Repassa </h5> 
+                    <p class="text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde est dignissimos dolorum debitis totam vel officiis reprehenderit adipisci praesentium esse atque corrupti veniam labore nesciunt, quae facere excepturi non? Hic!</p>               
+                </div>
+                <!--/TituloRepassa-->
+
+                <!--TituloRedesSociais-->
+                <div class="col-md-2 justify-content-center">
+                    <h5 class="colorFont">DoAre</h5>
+                    <p>
+                        <a class="colorFont selecao " href="#">Equipe</a>
+                    </p>
+
+                    <p>
+                        <a class=" colorFont selecao " href="#">Contato</a>
+                    </p>
+                    <div class="d-flex justify-content-start">
+   
+                        <ul class="social-network mt-3">
+                            <li>
+                                <a href="https://www.facebook.com/" target="_blank" class="iconFace">
+                                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                                </a>
+                            </li>
+                
+                            <li>
+                                <a href="https://www.instagram.com/" target="_blank" class="iconInsta">
+                                    <i class="fa fa-instagram" aria-hidden="true"></i>
+                                </a>
+                            </li>
+                
+                            <li>
+                                <a href="https://www.github.com/" target="_blank" class="iconLin">
+                                    <i class="fa fa-github" aria-hidden="true"></i>
+                                </a>
+                            </li>
+                
+                
+                        </ul>
+             
+                        
+                
+                      </div>
+
+                </div>
+                <!--TituloRedesSociais-->
+
+                <!--TituloNoticias-->
+                <div class="col-md-6">
+                    <h5 class="colorFont">Notícias</h5>
+                    <p class="mt-2 text">Fique por dentro de nossa atualizações</p>
+                    <div class="form-group">
+                        <input class="form-control mt-2" type="text" name="email" id="email" placeholder="Digite seu e-mail"> 
+                        <div class="pt-3 button">
+                            <button class="btn btn-sm btn-outline-warning" type="submit">Enviar <i class="fa fa-paper-plane-o" aria-hidden="true"></i> </button>
+                        </div>
+                </div>
+                <!--/TituloNoticias-->
+                
+                </div>
+  
+         </div>
+        
     </div>
     
-</div>
+     <!--Copyright-->
+     <div class="footer-copyright bg-warning text-center py-3">
+        <span class="text-light"> © 2021 Copyright </span>
+    
+    </div>
+
+</footer> 
+<!--footer-->
 
