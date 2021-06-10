@@ -10,10 +10,7 @@
                 </div>
             </div>
             <ul class="list text-muted mt-3 pl-0">
-                <li><i class="far fa-building mr-3 ml-2"></i>Bussiness account</li>
-                <li><i class="fas fa-wallet mr-3 ml-2"></i>Finance management</li>
-                <li><i class="far fa-credit-card mr-3 ml-2"></i>Transactions</li>
-                <li><i class="fas fa-chart-pie mr-3 ml-2"></i>Spending analysis</li>
+                <li><a [routerLink]="['/user-edit', id]"><i class="far fa-building mr-3 ml-2"></i>Editar perfil</a></li>
             </ul>
         </div>
     </div>
@@ -93,8 +90,13 @@
                                     <div class=" d-flex justify-content-between align-items-center">
                                         <div class="d-flex justify-content-between align-items-center ">
                                             <div class="mr-2">
+
+                                                <img class="rounded-circle" src="{{item.email.foto}}" alt="Imagem do user" width="50px"
+                                                    height="50px" class="rounded-circle">
+
                                                 <img class="rounded-circle" src="{{user.foto}}" alt="Imagem do user"
                                                     width="50px" height="50px" class="rounded-circle">
+
                                             </div>
                                             <div class="ml-2 mt-2">
                                                 <div class="h5 m-0 postfonth"></div>
@@ -109,8 +111,12 @@
 
                                         <div class="d-flex justify-content-end">
                                             <h5 class="mtema">
+
+                                                <span class="tema-font">Tema: {{item.tema.descricao}}</span> <img src="" class="iconcard1">
+
                                                 <span class="tema-font">tema:{{item.tema.descricao}}</span> <img src=""
                                                     class="iconcard1">
+
                                             </h5>
                                         </div>
                                     </div>
@@ -187,8 +193,12 @@
 
                                     </div>
                                     <h5 class="mtema m-0">
+
+                                        <span class="tema-font">Tema: {{item.tema.descricao}}</span> <img src="" class="iconcard1">
+
                                         <span class="tema-font">tema: tema:{{item.tema.descricao}}</span> <img src=""
                                             class="iconcard1">
+
                                     </h5>
                                 </div>
 
@@ -265,8 +275,7 @@
                     <div class="container">
                         <div class="row">
 
-                            <button data-dismiss="modal" routerLink='/tema' class="btn btn-secondary ml-2"><i
-                                    class="fa fa-video-camera" aria-hidden="true"></i> Cadastrar Novo Tema
+                            <button data-dismiss="modal" routerLink='/tema' class="btn btn-secondary ml-2"> Cadastrar Novo Tema
                             </button>
                         </div>
 
