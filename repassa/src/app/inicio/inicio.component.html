@@ -1,89 +1,268 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-
-<head>
-    <meta charset="UTF-8">
-    <title>Inicio</title>
-</head>
-<div class="container mt-5 mb-5">
-    <div class="d-flex justify-content-center row">
-        <div class="col-md-8">
-            <div class="feed">
-
-                <!-- Publish -->
-                <div class="share border bg-white">
-                    <div class="d-flex flex-row inputs p-2 py-4"><img class="rounded-circle"
-                            src="https://i.imgur.com/44HzzUN.jpg" width="40"><input type="text"
-                            class="border-0 form-control share-input" placeholder="Share your thoughts"></div>
-                    <div class="d-flex flex-row justify-content-between border-top mb-3 mr-2">
-                        <div class="d-flex flex-row publish-options">
-                            <div class="align-items-center border-right p-2 share share-logo">
-                                <img src="https://i.imgur.com/RxsmP9u.png" height="20px" width="20px">Foto
-                            </div>
-                            <div class="align-items-center border-right p-2 share share-logo">
-                                <img src="https://i.imgur.com/by6kzAb.png" height="20px" width="20px">Video
-                            </div>
-                            
-                            <!--teste-rotaTeama-->
-                            <div class="align-items-center border-right p-2 share share-logo">
-                                <img routerLink='/tema' src="https://i.imgur.com/by6kzAb.png" height="20px" width="20px">Tema
-
-                            </div>
-                             <!--/teste-rotaTeama-->
-
-                        </div>
-                        <button id="botaoentrar" class="btn mt-2">Publicar</button>
+<div class="container-fluid d-flex justify-content-center" id="bg">
+    <!-- Parte fixa esquerda Pag -->
+    <div class="container d-flex justify-content-center" id="perfilLateral">
+        <div class="card mt-4 px-4 pt-4 pb-2">
+            <div class="media p-2 "> <img width="50px" height="50px" src="{{foto}}" class="mr-1 align-self-start">
+                <div class="media-body">
+                    <div class="d-flex flex-row justify-content-between">
+                        <h6 class="ml-3 mt-2 mb-0">{{nome}}</h6>
                     </div>
                 </div>
             </div>
+            <ul class="list text-muted mt-3 pl-0">
+                <li><i class="far fa-building mr-3 ml-2"></i>Bussiness account</li>
+                <li><i class="fas fa-wallet mr-3 ml-2"></i>Finance management</li>
+                <li><i class="far fa-credit-card mr-3 ml-2"></i>Transactions</li>
+                <li><i class="fas fa-chart-pie mr-3 ml-2"></i>Spending analysis</li>
+            </ul>
+        </div>
+    </div>
+    <!-- /Parte fixa esquerda Pag -->
 
-            <!-- Fim Publish -->
+    <!-- postagens -->
+    <div class="col-md-8 d-flex justify-content-center mt-3">
+        <div class="container">
+            <div class="col-md-10">
+                <div class="row align-items-center">
+                    <div class="card border-secondary mt-3 w-100" id="bodypostagem">
+                        <div class="card-header">
+                            <p class="card-text mt-3 mb-3">
 
-            <!-- Primeiro Feed de Postagem -->
-            <div class="bg-white border mt-2">
-                <div>
-                    <div class="d-flex flex-row justify-content-between align-items-center p-2 border-bottom">
-                        <div class="d-flex flex-row align-items-center feed-text px-2"><img class="rounded-circle"
-                                src="https://i.imgur.com/aoKusnD.jpg" width="45">
-                            <div class="d-flex flex-column flex-wrap ml-2"><span class="font-weight-bold">Thomson
-                                    ben</span><span class="text-black-50 time">40 minutes ago</span></div>
+
+                                <button type="button" class="btn btn-outline-secondary btn-md ml-4" style="width: 80%"
+                                    data-toggle="modal" data-target="#novaPostagem">
+                                    Olá , comece uma publicação aqui!
+                                </button>
+                            </p>
+                            <hr />
+                            <div class="container-fluid d-flex justify-content-center">
+                                <label class="btn btn-default mr-5" data-toggle="modal" data-target="#novaPostagem"><img
+                                        class="iconbuscar" src="https://i.imgur.com/3Vxv2W2.png" />
+                                    Foto <input type="button" hidden />
+                                </label>
+                                <label class="btn btn-default mr-5" data-toggle="modal" data-target="#novaPostagem"><img
+                                        class="iconbuscar" src="https://i.imgur.com/2kGNjeH.png" />
+                                    Vídeo <input type="button" hidden />
+                                </label>
+                                
+
+                            </div>
                         </div>
-                        <div class="feed-icon px-2"><i class="fa fa-ellipsis-v text-black-50"></i></div>
                     </div>
                 </div>
-                <div class="p-2 px-3"><span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</span></div>
-                <div class="d-flex justify-content-end socials p-2 py-3"><img src="https://i.imgur.com/aFcH3Qz.png"
-                        height="20px" width="20px"><img src="https://i.imgur.com/HF6yrc7.png" height="20px"
-                        width="20px"><img src="https://i.imgur.com/9TeRUsD.png" height="20px" width="20px"></div>
-            </div>
 
-            <!-- Fim Primeiro Feed de Postagem -->
+                <nav>
+                    <div class="nav nav-tabs d-flex justify-content-center mt-3" id="nav-tab" role="tablist">
+                        <a class="nav-item nav-link active font-weight-bold navstyle" id="nav-todasPostagens"
+                            data-toggle="tab" href="#todasPostagens" role="tab" aria-controls="nav-todasPostagens"
+                            aria-selected="true">Todas as
+                            Postagens</a>
 
-            <!-- Segundo Feed de Postagem -->
-            <div class="bg-white border mt-2">
-                <div>
-                    <div class="d-flex flex-row justify-content-between align-items-center p-2 border-bottom">
-                        <div class="d-flex flex-row align-items-center feed-text px-2"><img class="rounded-circle"
-                                src="https://i.imgur.com/aoKusnD.jpg" width="45">
-                            <div class="d-flex flex-column flex-wrap ml-2"><span class="font-weight-bold">Thomson
-                                    ben</span><span class="text-black-50 time">40 minutes ago</span></div>
-                        </div>
-                        <div class="feed-icon px-2"><i class="fa fa-ellipsis-v text-black-50"></i></div>
+                        <a class="nav-item nav-link font-weight-bold navstyle" id="nav-minhasPostagens-tab"
+                            data-toggle="tab" href="#minhasPostagens" role="tab" aria-controls="nav-minhasPostagens"
+                            aria-selected="false">Minhas Postagens</a>
                     </div>
+                </nav>
+
+                <div class="tab-content mt-3" id="nav-tabContent">
+                    <!-- Todas as Postagens -->
+                    <div class="tab-pane fade show active" id="todasPostagens" role="tabpanel"
+                        aria-labelledby="nav-todasPostagens-tab">
+                        <div class="row align-items-center">
+                            <div class="card border-secondary mt-3 mb-3 w-100 bodypost" *ngFor='let item of user.postagem'>
+                                <div class="card-header color-header border-secondary">
+                                    <div class=" d-flex justify-content-between align-items-center">
+                                        <div class="d-flex justify-content-between align-items-center ">
+                                            <div class="mr-2">
+                                                <img class="rounded-circle" src="" alt="Imagem do user" width="50px"
+                                                    height="50px" class="rounded-circle">
+                                            </div>
+                                            <div class="ml-2 mt-2">
+                                                <div class="h5 m-0 postfonth"></div>
+                                                <div class="h7 text-muted">
+                                                    <p class="text-muted"> <i class="fa fa-clock-o"
+                                                            aria-hidden="true"></i></p>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="d-flex justify-content-end">
+                                            <h5 class="mtema">
+                                                <span class="tema-font">tema:{{item.tema.descricao}}</span> <img src="" class="iconcard1">
+                                            </h5>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="card-body text-center">
+                                    <h5 class="card-title postfonth1">{{item.titulo}}</h5>
+                                    <p class="card-text mt-3"></p>
+
+                                    <img src="{{item.img}}" width="100%" height="100%" alt="" />
+
+                                    <div class="container">
+                                        <div class="row config-video">
+                                            <iframe width="560" height="315" title="YouTube video player"
+                                                frameborder="0"
+                                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                                allowfullscreen></iframe>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- /Todas as Postagens -->
+
+                    <!-- Minhas Postagens -->
+                    <div class="tab-pane fade show active" id="minhasPostagens" role="tabpanel"
+                        aria-labelledby="nav-minhasPostagens-tab">
+                        <div class="row align-items-center">
+                            <div class="card border-secondary mt-3 mb-3 w-100 bodypost" >
+                                <div class="card-header color-header border-secondary">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <div class="mr-2">
+                                                <img class="rounded-circle" width="45" src="" alt="Imagem do user"
+                                                    width="50px" height="50px" class="rounded-circle">
+                                            </div>
+                                            <div class="ml-2 mt-2">
+                                                <div class="h5 m-0 postfonth"></div>
+                                                <div class="h7 text-muted">
+                                                    <p class="text-muted"> <i class="fa fa-clock-o"
+                                                            aria-hidden="true"></i></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="dropdown">
+                                            <button class="btn btn-light dropdown-toggle mb-5" type="button"
+                                                id="gedf-drop1" data-toggle="dropdown" aria-haspopup="true"
+                                                aria-expanded="false">
+                                                <i class="fa fa-ellipsis-h"></i>
+                                            </button>
+                                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="gedf-drop1">
+
+                                                <a class="text-info dropdown-item">Editar <i
+                                                        class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
+                                                <a class="text-danger dropdown-item">Excluir <i class="fa fa-trash-o"
+                                                        aria-hidden="true"></i></a>
+                                            </div>
+                                        </div>
+
+
+
+                                    </div>
+                                    <h5 class="mtema m-0">
+                                        <span class="tema-font">tema:</span> <img src="" class="iconcard1">
+                                    </h5>
+                                </div>
+
+
+                                <div class="card-body text-center">
+                                    <h5 class="card-title postfonth1"></h5>
+
+                                    <p class="card-text mt-3"></p>
+                                    <img src="" width="100%" height="100%" alt="" />
+
+                                    <div class="container">
+                                        <div class="row config-video">
+                                            <iframe width="560" height="315" title="YouTube video player"
+                                                frameborder="0"
+                                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                                allowfullscreen></iframe>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <!-- /Minhas Postagens -->
                 </div>
-                <div class="feed-image p-2 px-3"><img class="img-fluid img-responsive"
-                        src="https://i.imgur.com/aoKusnD.jpg"></div>
-                <div class="d-flex justify-content-end socials p-2 py-3"><img src="https://i.imgur.com/aFcH3Qz.png"><img
-                        src="https://i.imgur.com/HF6yrc7.png"><img src="https://i.imgur.com/9TeRUsD.png"></div>
+            </div>
+        </div>
+    </div>
+    <!-- /postagens -->
+</div>
+
+<!-- Modal postagem -->
+<div class="modal fade blur" id="novaPostagem" tabindex="-1" role="dialog" aria-labelledby="TituloModalCentralizado"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header colormodaltitle">
+                <h5 class="modal-title modaltitle" id="TituloModalCentralizado">
+                    Nova Postagem
+                </h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                    <span aria-hidden="true">&times;</span>
+                </button>
             </div>
 
-            <!-- Fim Segundo Feed de Postagem -->
+            <div class="modal-body" id="modalheight">
+                <div class="form-group">
+                    <label for="tema" class="modaltitle">Escolha um tema:</label>
+                    <select [(ngModel)]='idTema' (change)='findByIdTema()' class="form-control" name="tema" id="tema">
+                        <option *ngFor='let item of listaTemas ' value="{{item.id}}">{{item.descricao}}>
+
+                        </option>
+                    </select>
+
+                    <label for="titulo" class="modaltitle">Título</label>
+                    <input [(ngModel)]='postagem.titulo' type="text" class="form-control" id="titulo"
+                        placeholder="Digite o título" />
+
+                    <label for="texto" class="modaltitle">Texto</label>
+                    <textarea class="form-control" name="texto" id="texto" rows="3"
+                        placeholder="O que você está pensando,?"></textarea>
+
+                    <label for="imagem" class="modaltitle">Imagem</label>
+                    <input [(ngModel)]='postagem.img' type="text" class="form-control" id="imagem"
+                        placeholder="Imagem" />
 
 
+                    <div class="container">
+                        <div class="row">
+
+                            <button data-dismiss="modal" routerLink='/tema' class="btn btn-secondary ml-2"><i
+                                    class="fa fa-video-camera" aria-hidden="true"></i> Cadastrar Novo Tema
+                            </button>
+                        </div>
+
+                        <div class="row config-video">
+                            <iframe width="560" height="315" title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                        </div>
+                    </div>
+
+                    <!-- <label for="referencia" class="modaltitle">Referências de apoio</label>
+            <input [(ngModel)]="postagem.referencia" class="form-control" name="referencia" id="referencia"
+              placeholder="Digite a fonte do conteúdo (opcional)" /> -->
+
+                </div>
+            </div>
+
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger font-button" data-dismiss="modal">
+                    Cancelar
+                </button>
+                <button (click)='publicar()' type="button" class="btn btn-success font-button" data-dismiss="modal">
+                    Publicar
+                </button>
+            </div>
         </div>
     </div>
 </div>
 
-</html>
+<!-- /Modal Postagem -->
