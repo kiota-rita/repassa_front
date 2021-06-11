@@ -18,10 +18,10 @@ import { UserEditComponent } from './edit/user-edit/user-edit.component';
 
 
 const routes: Routes = [
-  {path: '', redirectTo: 'login', pathMatch: 'full'},
+  {path: '', redirectTo: 'logar', pathMatch: 'full'},
 
- {path: 'login', component: DenyLoginComponent},
- {path: 'cadastro', component: CadastroComponent},
+ {path: 'logar', component: DenyLoginComponent},
+ {path: 'cadastrar', component: CadastroComponent},
 
  {path: 'home', component: HomeComponent},
  {path: 'inicio', component: InicioComponent},
