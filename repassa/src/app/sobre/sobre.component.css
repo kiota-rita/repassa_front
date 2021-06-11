@@ -1,6 +1,10 @@
 @import url(https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap);
 
 *
+
+    
+
+
     {
         margin: 0;
         padding: 0;
@@ -72,4 +76,94 @@
         clip-path: circle(600px at right 800px);
     }
 
+
+    .colorFont{
+    
+        color: #61297c
+    
+    }
+    
+    button {
+        background: #fedc18;
+        font-size: 12pt;
+        border-radius: 10px;
+        width: 100pt;
+        box-shadow: #d6d2c4 5px 5px 7px;
+        color: #61297c;
+        font-weight: 500;
+      }
+    
+      .selecao {
+        transition: all 0.5s;
+        cursor: pointer
+      }
+    
+      .selecao:hover{
+            -webkit-filter: drop-shadow(15px 10px 5px rgba(0,0,0,.4));
+            filter: drop-shadow(9px 10px 5px rgba(0,0,0,.4));
+            
+            color:#ff147c
+      }
+
+      ul.social-network {
+        list-style: none;
+        padding: 0;
+    }
+    
+    ul.social-network li{
+        display:inline-block;
+        margin: 0;
+        padding: 5px;
+    
+    }
+    
+    .fa{
+        font-size: 15pt;
+        color: #61297c;
+        padding: 5px;
+    }
+    
+    .fa-facebook:hover{
+        color:#3b5998;
+    }
+    
+    .fa-instagram:hover{
+        color:#C13584
+    }
+    
+    .fa-github:hover{
+        color:#000000
+    }
+    
+    .colorFont {
+        
+        color: #61297c
+    
+    }
+    
+    .colorBackground {
+    
+        color:#fedc18
+    }
+    .selecao {
+        transition: all 0.5s;
+        cursor: pointer
+      }
+    
+      .selecao:hover{
+            -webkit-filter: drop-shadow(15px 10px 5px rgba(0,0,0,.4));
+            filter: drop-shadow(9px 10px 5px rgba(0,0,0,.4));
+            
+            color:#ff147c
+      }
+    
+      button {
+        background: #fedc18;
+        font-size: 12pt;
+        border-radius: 10px;
+        width: 100pt;
+        box-shadow: #d6d2c4 5px 5px 7px;
+        color: #61297c;
+        font-weight: 500;
+      }
     
