@@ -1,0 +1,32 @@
+
+#tituloApagarPostagem{
+    color: #61297c;
+}
+
+#botao-cancelar{
+    font-size: 12pt;
+    border-radius: 10px;
+    width: 100pt;
+    font-weight: 500;
+    box-shadow: #d6d2c4 5px 5px 7px
+}
+
+#botao-cancelar:hover{
+    background:rgb(116, 3, 3);
+    color:white;
+}
+
+#botao-apagar{
+    background: #61297c;
+    font-size: 12pt;
+    border-radius: 10px;
+    width: 100pt;
+    font-weight: 500;
+    box-shadow: #d6d2c4 5px 5px 7px;
+    color: #ffffff;
+}
+
+#botao-apagar:hover{
+    background: #fedc18;
+    color: #401c52;
+}
