@@ -10,6 +10,12 @@
 
 }
 
+#perfilLateral {
+  height: 500px;
+  left: 0;
+  width: 100%;
+}
+
 .align-items-center {
     align-items: center!important;
 }
@@ -167,7 +173,7 @@ body {
   /* width: 300px; */
   border: none;
   border-radius: 10px;
-  
+
 }
 
 .media {
@@ -183,7 +189,7 @@ body {
   line-height: 50px;
   font-size: 14px;
   text-decoration: none;
-  
+
 }
 
 ul.list li a{
@@ -238,3 +244,66 @@ background:rgb(116, 3, 3);
 }
 /*botoes*/
 
+.list {
+  list-style: none;
+  line-height: 50px;
+  font-size: 14px;
+  text-decoration: none;
+
+}
+
+ul.list li a{
+  text-decoration: none;
+}
+
+ul.list li:hover {
+  border: none;
+  background-color: #e7e7db;
+  color:#61297c;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+
+#page-content{
+  min-width: 100vw;
+  width: 100%;
+  position: relative;
+  margin-left: 1rem;
+}
+
+.lateral-direita{
+right: 0;
+}
+
+.postagens{
+margin: auto;
+}
+
+
+/*card amigos*/
+#titulo-amigos{
+  color: #61297c;
+  font-weight: bold;
+}
+
+
+.card-amigos {
+  border-radius: 5px;
+  width: 300px;
+  border: none
+}
+
+.about {
+  line-height: 19px
+}
+
+.follow {
+  height: 31px;
+  border-radius: 22px
+}
+
+hr {
+  color: #c5c4c4
+}
+/*card amigos*/

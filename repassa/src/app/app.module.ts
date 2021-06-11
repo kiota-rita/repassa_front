@@ -31,7 +31,6 @@ import { AlertasComponent } from './alertas/alertas.component';
 
 import { UserEditComponent } from './edit/user-edit/user-edit.component';
 import { OrderModule } from 'ngx-order-pipe';
-import { PerfilLateralComponent } from './perfil-lateral/perfil-lateral.component';
 
 
 
@@ -60,11 +59,10 @@ import { PerfilLateralComponent } from './perfil-lateral/perfil-lateral.componen
     PostagemEditComponent,
     PostagemDeleteComponent,
     AlertasComponent,
-    UserEditComponent,
-    PerfilLateralComponent
+    UserEditComponent
 
   ],
-  
+
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -72,7 +70,7 @@ import { PerfilLateralComponent } from './perfil-lateral/perfil-lateral.componen
     FormsModule,
     ModalModule.forRoot(),
     OrderModule
-    
+
   ],
   providers: [],
   bootstrap: [AppComponent]
