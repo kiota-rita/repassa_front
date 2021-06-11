@@ -26,7 +26,7 @@ export class PostagemDeleteComponent implements OnInit {
     window.scroll(0,0)
     
     if(environment.token == ''){
-      this.router.navigate(['/entrar'])
+      this.router.navigate(['/login'])
     }
 
     this.idPost = this.route.snapshot.params['id']
