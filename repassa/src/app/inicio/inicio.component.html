@@ -91,7 +91,8 @@
                                                 <img class="rounded-circle" src="{{item.email.foto}}" alt="Imagem do user" width="50px"
                                                     height="50px" class="rounded-circle">
 
-                                               
+
+                                  
                                             </div>
                                             <div class="ml-2 mt-2">
                                                 <div class="h5 m-0 postfonth"></div>
@@ -141,10 +142,7 @@
                     <div class="tab-pane fade show active" id="minhasPostagens" role="tabpanel"
                         aria-labelledby="nav-minhasPostagens-tab">
                         <div class="row align-items-center">
-
-                            <div class="card border-secondary mt-3 mb-3 w-100 bodypost"
-                                *ngFor='let item of user.postagem'>
-
+                            
                             <div class="card border-secondary mt-3 mb-3 w-100 bodypost" *ngFor='let item of user.postagem | orderBy: key : reverse'> <!--for aqui-->
 
                                 <div class="card-header color-header border-secondary">
@@ -187,7 +185,11 @@
                                     <h5 class="mtema m-0">
 
                                         <span class="tema-font">Tema: {{item.tema.descricao}}</span> <img src="" class="iconcard1">
+
                                        
+
+                                        
+
                                     </h5>
                                 </div>
 
@@ -198,14 +200,14 @@
                                     <p class="card-text mt-3">{{item.texto}}</p>
                                     <img src="{{item.img}}" width="100%" height="100%" alt="" />
 
-                                    <div class="container">
+                                   <!--  <div class="container">
                                         <div class="row config-video">
                                             <iframe width="560" height="315" title="YouTube video player"
                                                 frameborder="0"
                                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                                                 allowfullscreen></iframe>
                                         </div>
-                                    </div>
+                                    </div> -->
 
 
                                 </div>
