@@ -1,30 +1,77 @@
 <div class="container mb-5 mt-5">
 
+    <!--Logo-->
+    <div class="d-flex justify-content-center mb-4">
+        <img
+          style="width: 10%"
+          class="d-flex justify-content-center"
+          src="https://i.imgur.com/5KOEUob.png"
+          alt="Logo repassa"
+        />
+      </div>
+      <!--Logo-->
+
     <div class="row mb-5">
         <div class="col md-12">
-            <h1 class="text-center" id="tema-apagar">Apagar postagem</h1>
-        </div>
-    </div>
-
-    <div class="row mb-3">
-        <div class="col-md-12">
-            <h4 class="text-center">Você tem certeza que deseja apagar essa postagem?</h4>
-            <h4 class="text-center">Todas as postagens relacionadas a ele serão igualmente apagadas.</h4>
+            <h1 class="text-center" id="tituloApagarPostagem">Apagar postagem</h1>
         </div>
     </div>
 
     <div class="row mb-5">
         <div class="col-md-12">
-            <div class="col-md-12">
-                <h5 class="text-center" id="tema">Título: {{postagem.titulo}}</h5>
-            </div>
+            <h5 class="text-center">Você tem certeza que deseja apagar essa postagem?</h5>
+            <h5 class="text-center">Todas as postagens relacionadas a ele serão igualmente apagadas.</h5>
         </div>
+    </div>
+
+    <div class="row mb-5 justify-content-center">        
+            <div class="col-md-6 ">
+                <div class="card-header color-header border-secondary">
+                    
+                        <div class="d-flex justify-content-between align-items-center ">
+                            <div class="mr-2">
+
+                                <img class="rounded-circle" src="{{postagem.email.foto}}" alt="Imagem do user" width="50px"
+                                    height="50px" class="rounded-circle">
+                            </div>
+                            <div class="ml-2 mt-2">
+                                <div class="h5 m-0 postfonth"></div>
+                                <div class="h7 text-muted">
+                                    <p class="text-muted"> <i class="fa fa-clock-o" aria-hidden="true"></i>{{postagem.data |
+                                        date: 'dd/MM/yyyy'}} às
+                                        {{postagem.data | date: 'HH:mm'}}</p>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="d-flex justify-content-end">
+                            <h5 class="mtema">
+
+                                <span class="tema-font">Tema: {{postagem.tema.descricao}}</span> <img src=""
+                                    class="iconcard1">
+
+                            </h5>
+                        </div>
+                    
+                </div>
+                <div class="card-body text-center">
+                    <h5 class="card-title postfonth1">{{postagem.titulo}}</h5>
+                    <p class="card-text">{{postagem.texto}}</p>
+
+                    <img src="{{postagem.img}}" width="500px" height="500px" alt="" />
+
+
+                </div>
+
+            </div>
+        
     </div>
 
     <div class="row">
         <div class="col-md-12 d-flex justify-content-center">
-            <button routerLink='/inicio' class="btn mr-4" id="botao-nao">Não</button>
-            <button (click)='apagar()' class="btn btn-danger" id="botao-sim" >Sim</button>
+            <button id="botao-apagar" routerLink='/inicio' class="btn mr-4" >Não</button>
+            <button id="botao-cancelar" (click)='apagar()' class="btn-danger" >Sim</button>
 
         </div>
     </div>

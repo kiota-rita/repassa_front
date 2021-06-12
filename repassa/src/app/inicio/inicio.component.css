@@ -1,15 +1,20 @@
 @import url(https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap);
-*
+
 .postagem-centro {
   margin: 15px;
   display: flex;
   flex-wrap: wrap;
-  margin-right: -15px;
-  margin-left: -15px;
+  margin-right: 15px;
+  margin-left: 15px;
   box-sizing: border-box;
 
 }
 
+#perfilLateral {
+  height: 480px;
+  left: 0;
+  width: 100%;
+}
 
 .align-items-center {
     align-items: center!important;
@@ -17,25 +22,12 @@
 
 
 .tm-img1 {
-  width: 60px;
+  width: 50px;
   height: 50px;
 }
 
 .borda {
   border-radius: 5%;
-}
-
-.config-video {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-
-  margin-top: 50px;
-}
-#bg {
-  /* background-color: #e9e9e9; */
-  background-color: rgb(231, 236, 245);
 }
 
 .iconbuscar {
@@ -64,9 +56,8 @@ label {
 }
 
 .titulocard {
-  text-align: center;
+  text-align: left;
   font-weight: bolder;
-  color: #151515;
 }
 
 .iconcard {
@@ -79,7 +70,7 @@ label {
 
 #bodypostagem,
 .bodypost {
-  box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+  box-shadow: #d6d2c4 3px 3px;
   overflow: hidden;
   border-radius: 5px;
   margin-left: 0px;
@@ -88,14 +79,14 @@ label {
 
 #conteudocard {
   font-weight: bold;
-  box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+  box-shadow: #d6d2c4 3px 3px;
   overflow: hidden;
   border-radius: 5px;
 }
 
 .cardfont {
   text-decoration: none;
-  color: #5c5d6d;
+  color: #635e61;
 }
 
 .modaltitle {
@@ -105,8 +96,7 @@ label {
 }
 
 .colormodaltitle {
-  background-color: #030752;
-  color: whitesmoke;
+  color: #61297c;
 }
 
 .titlerodape {
@@ -128,12 +118,10 @@ label {
 
 .postfonth {
   font-weight: bold;
-  color: #000000;
 }
 
 .postfonth1 {
   font-weight: bold;
-  color: #000000;
   text-align: center;
   margin-bottom: 0px;
 }
@@ -143,6 +131,14 @@ label {
 }
 
 .tema-font {
+  text-align: right;
+  font-size: small;
+  font-weight: bold;
+  color: #a5a4a4d7;
+  margin-top: 15px;
+}
+
+.text-muted{
   text-align: right;
   font-size: small;
   font-weight: bold;
@@ -172,22 +168,17 @@ li{
 }
 
 
-________
-
 body {
   background-color: #EEEFF3;
   font-family: 'Poppins', sans-serif
 }
 
-#perfilLateral {
-  height: 500px
-}
 
 .card {
-  width: 300px;
+  /* width: 300px; */
   border: none;
   border-radius: 10px;
-  
+
 }
 
 .media {
@@ -198,19 +189,201 @@ body {
   margin-top: 13px
 }
 
-p.text-muted {
-  font-size: 14px
-}
-
 .list {
   list-style: none;
   line-height: 50px;
-  font-size: 14px
+  font-size: 14px;
+  text-decoration: none;
+
+}
+
+ul.list li a{
+  text-decoration: none;
 }
 
 ul.list li:hover {
   border: none;
-  background-color: #ECF2FE;
-  color: #224bba;
+  background-color: #e7e7db;
+  color:#61297c;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+/*botoes*/
+.btn-cadastrar-tema{
+  background: #61297c;
+  font-size: 12pt;
+  border-radius: 10px;
+  width: 150pt;
+  font-weight: 500;
+  box-shadow: #d6d2c4 5px 5px 7px;
+  color: #ffffff;
+}
+
+#botao-cancelar{
+    font-size: 12pt;
+    border-radius: 10px;
+    width: 100pt;
+    font-weight: 500;
+    box-shadow: #d6d2c4 5px 5px 7px
+}
+
+#botao-cancelar:hover{
+background:rgb(116, 3, 3);
+    color:white;
+}
+
+#botao-publicar{
+  background: #61297c;
+    font-size: 12pt;
+    border-radius: 10px;
+    width: 100pt;
+    font-weight: 500;
+    box-shadow: #d6d2c4 5px 5px 7px;
+    color: #ffffff;
+}
+
+#botao-atualizar:hover{
+  background: #fedc18;
+  color: #401c52;
+}
+/*botoes*/
+
+.list {
+  color: black;
+  list-style: none;
+  font-size: 12pt;
+  text-decoration: none;
+
+}
+
+ul.list li a{
+  text-decoration: none;
+}
+
+ul.list li:hover {
+  color:#61297c;
+  cursor: pointer;
+  text-decoration: none;
+  background-color: rgb(243, 243, 243);
+  border-radius: 20%;
+}
+
+
+#page-content{
+  min-width: 100vw;
+  width: 100%;
+  position: relative;
+  margin-left: 1rem;
+}
+
+.lateral-direita{
+right: 0;
+}
+
+.postagens{
+margin: auto;
+}
+
+
+/*card amigos*/
+#titulo-amigos{
+  font-weight: bold;
+}
+
+
+.card-amigos {
+  border-radius: 5px;
+  width: 2800px;
+  border: none
+}
+
+.about {
+  line-height: 19px
+}
+
+.follow {
+  background: #61297c;
+    font-size: 10pt;
+    font-weight: 500;
+    box-shadow: #d6d2c4 5px 5px 7px;
+    color: #ffffff;
+    height: 31px;
+    border-radius: 22px
+  
+}
+
+hr {
+  color: #c5c4c4
+}
+
+.nome{
+  font-size: 10pt;
+}
+
+/*card amigos*/
+
+/*card campanhas*/
+#titulo-campanhas{
+  font-weight: bold;
+}
+
+.doar{
+    background: #61297c;
+    font-size: 10pt;
+    font-weight: 500;
+    box-shadow: #d6d2c4 5px 5px 7px;
+    color: #ffffff;
+    height: 31px;
+    border-radius: 22px
+  
+}
+
+/*icones postagem*/
+.socials img {
+  height: 25px;
+  width: 25px;
+  padding: 3px;
+  margin-right: 14px;
+  color: #d2c8c8;
   cursor: pointer
 }
+
+.socials img:hover {
+  transform: scale(1.5);
+  transition: transform 0.3s ease-out;
+  cursor: pointer;
+}
+
+
+.form-control{
+  font-size: 10pt;
+  font-weight: 500;
+  box-shadow: #d6d2c4 5px 5px 7px;
+  height: 31px;
+  border-radius: 22px
+}
+
+/*menu*/
+.colorFont{
+    
+  color: #61297c
+
+}
+
+.selecao {
+  transition: all 0.5s;
+  cursor: pointer
+}
+
+.selecao:hover{
+      -webkit-filter: drop-shadow(15px 10px 5px rgba(0,0,0,.4));
+      filter: drop-shadow(9px 10px 5px rgba(0,0,0,.4));
+      
+      color:#ff147c
+}
+
+
+
+
+
