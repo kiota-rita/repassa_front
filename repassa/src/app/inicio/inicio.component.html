@@ -13,13 +13,13 @@
           <img width="70px" height="70px" src="" class="rounded-circle">
           <div class="media-body">
             <div class="d-flex flex-row justify-content-between">
-              <h6 class="ml-3 mt-2 mb-0">Olá</h6>
+              <h6 class="ml-3 mt-2 mb-0">Olá, </h6>
             </div>
           </div>
   
           <ul class="list mt-3 pl-0">
             <li>Perfil</li>
-            <li><a><i class="fa fa-building mr-3 ml-2"></i>Editar perfil</a></li>
+            <li><a>Editar perfil</a></li>
             <li>Amigos</li>
             <li>Configurações</li>
             <li>Sair</li>
@@ -36,7 +36,7 @@
           <p class="card-text mt-3 mb-3">
             <button type="button" class="btn btn-md ml-5" style="width: 80%" data-toggle="modal"
               data-target="#novaPostagem">
-              Olá , comece uma publicação aqui!
+              <i class="fa fa-pencil-square-o" aria-hidden="true"></i> Olá , comece uma publicação aqui!
             </button>
           </p>
           <hr />
@@ -82,7 +82,8 @@
               </div>
             </div>
           </div>
-  
+          
+          <!-- /Todas as Postagens -->
           <div class="row align-items-center">
   
             <div class="card border-secondary mt-3 mb-3 w-100 bodypost"
@@ -137,7 +138,6 @@
   
             </div>
           </div>
-  
           <!-- /Todas as Postagens -->
   
           <!-- Minhas Postagens -->
@@ -177,10 +177,8 @@
                             class="fa fa-trash-o" aria-hidden="true"></i></a>
                       </div>
                     </div>
-  
-  
-  
                   </div>
+
                   <h5 class="mtema m-0">
   
                     <span class="tema-font">tema: tema:{{item.tema.descricao}}</span> <img src="" class="iconcard1">
@@ -222,24 +220,24 @@
         <div class="card p-3 card-amigos">
           <h5 id="titulo-amigos">Sugestões de amigos</h5>
           <div class="d-flex justify-content-between mt-2 align-items-center">
-            <div class="d-flex flex-row"> <img src="https://i.imgur.com/o5uMfKo.jpg" class="rounded-circle" width="40">
-              <div class="d-flex flex-column ml-1 about"> <span class="font-weight-bold">Madison</span> <small>585
-                  posts</small> </div>
-            </div> <button class="btn btn-outline-success btn-sm follow">Follow</button>
+            <div class="d-flex flex-row"> <img src="https://avatars.githubusercontent.com/u/50744116?v=4" class="rounded-circle" width="45">
+              <div class="d-flex flex-column ml-1 about"> <span class="nome">Thiago Lima</span> <small>585
+                  amigos</small> </div>
+            </div> <button class="btn btn-sm follow">Seguir</button>
           </div>
           <hr>
           <div class="d-flex justify-content-between mt-2 align-items-center">
-            <div class="d-flex flex-row"> <img src="https://i.imgur.com/tmdHXOY.jpg" class="rounded-circle" width="40">
-              <div class="d-flex flex-column ml-1 about"> <span class="font-weight-bold">Anna Sthesia</span> <small>285
-                  posts</small> </div>
-            </div> <button class="btn btn-outline-success btn-sm follow">Follow</button>
+            <div class="d-flex flex-row"> <img src="https://avatars.githubusercontent.com/u/57823621?v=4" class="rounded-circle" width="45">
+              <div class="d-flex flex-column ml-1 about"> <span class="nome">Ed Nascimento</span> <small>2085
+                  amigos</small> </div>
+            </div> <button class="btn  btn-sm follow">Seguir</button>
           </div>
           <hr>
           <div class="d-flex justify-content-between mt-2 align-items-center">
-            <div class="d-flex flex-row"> <img src="https://i.imgur.com/C4egmYM.jpg" class="rounded-circle" width="40">
-              <div class="d-flex flex-column ml-1 about"> <span class="font-weight-bold">Paul Moliv</span> <small>585
-                  posts</small> </div>
-            </div> <button class="btn btn-outline-success btn-sm follow">Follow</button>
+            <div class="d-flex flex-row"> <img src="https://media-exp1.licdn.com/dms/image/C4E03AQFUaZ1exqKyRg/profile-displayphoto-shrink_800_800/0/1601560644196?e=1628726400&v=beta&t=Y6XdWLLUOOl_SrAJquIhfwaFRgeVbgprev298qRSsbc" class="rounded-circle" width="45">
+              <div class="d-flex flex-column ml-1 about"> <span class="nome">Geandro Araujo</span> <small>587
+                  amigos</small> </div>
+            </div> <button class="btn btn-sm follow">Seguir</button>
           </div>
         </div>
       </div>
@@ -286,7 +284,7 @@
             <div class="container">
               <div class="row">
   
-                <button data-dismiss="modal" routerLink='/tema' class="btn-cadastrar-tema ml-2 mt-3">
+                <button data-dismiss="modal" routerLink='/tema' class="btn-cadastrar-tema mt-3">
                   Cadastrar novo tema
                 </button>
               </div>
@@ -300,10 +298,10 @@
         </div>
   
         <div class="modal-footer">
-          <button type="button" class="btn btn-danger font-button" id="botao-cancelar" data-dismiss="modal">
+          <button type="button" class="btn btn-danger" id="botao-cancelar" data-dismiss="modal">
             Cancelar
           </button>
-          <button (click)='publicar()' type="button" class="btn font-button" id="botao-publicar" data-dismiss="modal">
+          <button (click)='publicar()' type="button" class="btn " id="botao-publicar" data-dismiss="modal">
             Publicar
           </button>
         </div>
