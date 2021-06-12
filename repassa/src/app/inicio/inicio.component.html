@@ -1,28 +1,58 @@
-
-
 <head>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  </head>
-  
+</head>
+
+<nav class="navbar navbar-expand-lg navbar-light">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
+  <span class="navbar-toggler-icon"></span>
+ </button>
+
+ <div class="collapse navbar-collapse justify-content-center" id="conteudoNavbarSuportado">
+      <ul class="navbar-nav mr-auto d-flex align-items-center">
+
+          <li class="nav-item active">
+         <!--definir imagem logo-->
+          <img src="https://i.imgur.com/5KOEUob.png" alt="Logo Repassa" width ="80px" height="80px" class="img-fluid" >
+         <!--/definir imagem logo-->
+          </li>
+      </ul>
+
+      <ul class="navbar-nav ml-auto d-flex align-items-center">
+          <!--SobreNós-->
+          <li class="nav-item">
+              <div class="form-group">
+                <input type="text" class="form-control mt-3" id="titulo" placeholder="Buscar postagem por título"
+                  [(ngModel)]='tituloPost' (keyup)='findByTituloPostagem()'>
+            </div>
+          </li>
+          <!--/SobreNós-->
+
+          <!--BotãoEntrar-->
+          <li class="nav-item">
+          <button class="btn follow ml-3" type="submit">Sair</button>
+          </li>
+          <!--BotãoEntrar-->
+      </ul>
+  </div>
+</nav>
+<hr>
+
   <div class="row" id="feed">
-  
-    <!-- /Parte fixa esquerda Pag -->
+  <!-- /Parte fixa esquerda Pag -->
     <div class="col-md-3 position-fixed">
       <div class="d-flex justify-content-center" id="perfilLateral">
-        <div class="card p-5 mt-5 border">
-          <img width="70px" height="70px" src="" class="rounded-circle">
+        <div class="card p-5 mt-2 border">
+          <img width="70px" height="70px" src="{{foto}}" class="rounded-circle">
           <div class="media-body">
             <div class="d-flex flex-row justify-content-between">
-              <h6 class="ml-3 mt-2 mb-0">Olá, </h6>
+              <h6 class="mr-5 mt-2">Olá, {{nome}}</h6>
             </div>
           </div>
-  
-          <ul class="list mt-3 pl-0">
+          <ul class="list pl-0">
             <li>Perfil</li>
             <li><a>Editar perfil</a></li>
             <li>Amigos</li>
             <li>Configurações</li>
-            <li>Sair</li>
           </ul>
         </div>
       </div>
@@ -36,7 +66,7 @@
           <p class="card-text mt-3 mb-3">
             <button type="button" class="btn btn-md ml-5" style="width: 80%" data-toggle="modal"
               data-target="#novaPostagem">
-              <i class="fa fa-pencil-square-o" aria-hidden="true"></i> Olá , comece uma publicação aqui!
+              <i class="fa fa-pencil-square-o" aria-hidden="true"></i> Olá {{nome}}, escreva sua publicação aqui!
             </button>
           </p>
           <hr />
@@ -55,7 +85,6 @@
         </div>
       </div>
   
-  
       <nav>
         <div class="nav nav-tabs d-flex justify-content-center mt-3" id="nav-tab" role="tablist">
           <a class="nav-item nav-link active font-weight-bold navstyle" id="nav-todasPostagens" data-toggle="tab"
@@ -72,16 +101,6 @@
         <!-- Todas as Postagens -->
         <div class="tab-pane fade show active" id="todasPostagens" role="tabpanel"
           aria-labelledby="nav-todasPostagens-tab">
-  
-  
-          <div class="row d-flex justify-content-center mt-5 mb-5">
-            <div class="col-md-5">
-              <div class="form-group">
-                <input type="text" class="form-control" id="titulo" placeholder="Buscar postagem por título"
-                  [(ngModel)]='tituloPost' (keyup)='findByTituloPostagem()'>
-              </div>
-            </div>
-          </div>
           
           <!-- /Todas as Postagens -->
           <div class="row align-items-center">
@@ -100,45 +119,36 @@
                     </div>
                     <div class="ml-2 mt-2">
                       <div class="h5 m-0 postfonth">{{nome}}</div>
-                      <div class="h7 text-muted">
+                      <div>
                         <p class="text-muted"> <i class="fa fa-clock-o" aria-hidden="true"></i>{{item.data |
                           date: 'dd/MM/yyyy'}} às
                           {{item.data | date: 'HH:mm'}}</p>
                       </div>
                     </div>
-  
                   </div>
   
                   <div class="d-flex justify-content-end">
                     <h5 class="mtema">
-  
                       <span class="tema-font">Tema: {{item.tema.descricao}}</span> <img src="" class="iconcard1">
-  
                     </h5>
                   </div>
                 </div>
               </div>
   
-              <div class="card-body text-center">
-                <h5 class="card-title postfonth1">{{item.titulo}}</h5>
-                <p class="card-text">{{item.texto}}</p>
+              <div class="card-body">
+                <h5 class="card-title postfonth1 mb-3">{{item.titulo}}</h5>
+                <p class="card-text mb-5">{{item.texto}}</p>
   
                 <img src="{{item.img}}" width="100%" height="100%" alt="" />
-  
-                <!--  <div class="container">
-                                          <div class="row config-video">
-                                              <iframe width="560" height="315" title="YouTube video player"
-                                                  frameborder="0"
-                                                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                                  allowfullscreen></iframe>
-                                          </div>
-                                      </div> -->
-  
+                <div class="d-flex justify-content-end socials p-2 py-3"><img src="https://i.imgur.com/aFcH3Qz.png"
+                  height="20px" width="20px"><a href="https://api.whatsapp.com/send?phone=5511975225085" target="_blank"><img src="https://i.imgur.com/HF6yrc7.png" height="20px"
+                  width="20px"></a><img src="https://i.imgur.com/9TeRUsD.png" height="20px" width="20px">
               </div>
-  
+              </div>
             </div>
           </div>
-          <!-- /Todas as Postagens -->
+          </div>
+          <!-- /Todas as Postagens --> 
   
           <!-- Minhas Postagens -->
           <div class="tab-pane fade show active" id="minhasPostagens" role="tabpanel"
@@ -181,11 +191,10 @@
 
                   <h5 class="mtema m-0">
   
-                    <span class="tema-font">tema: tema:{{item.tema.descricao}}</span> <img src="" class="iconcard1">
+                    <span class="tema-font">tema:{{item.tema.descricao}}</span> <img src="" class="iconcard1">
   
                   </h5>
                 </div>
-  
   
                 <div class="card-body text-center">
                   <h5 class="card-title postfonth1">{{item.titulo}}</h5>
@@ -193,58 +202,68 @@
                   <p class="card-text mt-3">{{item.texto}}</p>
                   <img src="{{item.img}}" width="100%" height="100%" alt="" />
   
-                  <div class="container">
-                    <div class="row config-video">
-                      <iframe width="560" height="315" title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen></iframe>
-                    </div>
-                  </div>
-  
-  
                 </div>
-  
-  
               </div>
             </div>
           </div>
           <!-- /Minhas Postagens -->
         </div>
-      </div>
     </div>
     <!-- /postagens -->
   
-    <!--Amigos - Lateral Esquerda-->
+    <!--Amigos  e campanhas- Lateral Esquerda-->
     <div class="col-md-3 position-fixed lateral-direita">
-      <div class="container mt-5 d-flex justify-content-center">
+      <!--amigos-->
+      <div class="container mt-2 d-flex justify-content-center">
         <div class="card p-3 card-amigos">
           <h5 id="titulo-amigos">Sugestões de amigos</h5>
           <div class="d-flex justify-content-between mt-2 align-items-center">
             <div class="d-flex flex-row"> <img src="https://avatars.githubusercontent.com/u/50744116?v=4" class="rounded-circle" width="45">
-              <div class="d-flex flex-column ml-1 about"> <span class="nome">Thiago Lima</span> <small>585
+              <div class="d-flex flex-column ml-1 about"> <span class="nome font-weight-bold">Thiago Lima</span> <small>585
                   amigos</small> </div>
             </div> <button class="btn btn-sm follow">Seguir</button>
           </div>
           <hr>
           <div class="d-flex justify-content-between mt-2 align-items-center">
             <div class="d-flex flex-row"> <img src="https://avatars.githubusercontent.com/u/57823621?v=4" class="rounded-circle" width="45">
-              <div class="d-flex flex-column ml-1 about"> <span class="nome">Ed Nascimento</span> <small>2085
+              <div class="d-flex flex-column ml-1 about"> <span class="nome font-weight-bold">Ed Nascimento</span> <small>2085
                   amigos</small> </div>
             </div> <button class="btn  btn-sm follow">Seguir</button>
           </div>
           <hr>
-          <div class="d-flex justify-content-between mt-2 align-items-center">
-            <div class="d-flex flex-row"> <img src="https://media-exp1.licdn.com/dms/image/C4E03AQFUaZ1exqKyRg/profile-displayphoto-shrink_800_800/0/1601560644196?e=1628726400&v=beta&t=Y6XdWLLUOOl_SrAJquIhfwaFRgeVbgprev298qRSsbc" class="rounded-circle" width="45">
-              <div class="d-flex flex-column ml-1 about"> <span class="nome">Geandro Araujo</span> <small>587
-                  amigos</small> </div>
-            </div> <button class="btn btn-sm follow">Seguir</button>
+        </div>
+      </div>
+      <!--amigos-->
+      <!--campanhas-->
+        <div class="container mt-3 d-flex justify-content-center">
+          <div class="card p-3 card-amigos">
+            <h5 id="titulo-campanhas">Campanhas</h5>
+            <div class="d-flex justify-content-between mt-2 align-items-center">
+              <div class="d-flex flex-row"> <img src="https://i.imgur.com/TNFuuxG.jpeg" class="rounded-circle" width="45" height="45">
+                <div class="d-flex flex-column ml-1 about"> <span class="nome font-weight-bold">Campanha do agasalho</span> <small>500
+                    doadores</small> </div>
+              </div> <button class="btn btn-sm doar">Doar</button>
+            </div>
+            <hr>
+            <div class="d-flex justify-content-between mt-2 align-items-center">
+              <div class="d-flex flex-row"> <img src="https://curearthritis.org/wp-content/uploads/2019/11/Snow-man.jpeg" class="rounded-circle" width="45" height="45">
+                <div class="d-flex flex-column ml-1 about"> <span class="nome font-weight-bold">Inverno solidário</span> <small>200
+                    doadores</small> </div>
+              </div> <button class="btn  btn-sm doar">Doar</button>
+            </div>
+            <hr>
+            <!-- <div class="d-flex justify-content-between mt-2 align-items-center">
+              <div class="d-flex flex-row"> <img src="https://media-exp1.licdn.com/dms/image/C4E03AQFUaZ1exqKyRg/profile-displayphoto-shrink_800_800/0/1601560644196?e=1628726400&v=beta&t=Y6XdWLLUOOl_SrAJquIhfwaFRgeVbgprev298qRSsbc" class="rounded-circle" width="45">
+                <div class="d-flex flex-column ml-1 about"> <span class="nome">Geandro Araujo</span> <small>100
+                    doadores</small> </div>
+              </div> <button class="btn btn-sm doar">Doar</button>
+            </div> -->
           </div>
         </div>
       </div>
-    </div>
-    <!--Amigos - Lateral Esquerda-->
-  
+      <!--campanhas-->
   </div>
+  <!--Amigos  e campanhas- Lateral Esquerda-->
   
   <!-- Modal postagem -->
   <div class="modal fade blur" id="novaPostagem" tabindex="-1" role="dialog" aria-labelledby="TituloModalCentralizado"

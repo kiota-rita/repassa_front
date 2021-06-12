@@ -1,10 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap);
 
-
-*{
-  background-color: rgb(247, 243, 243);
-}
-
 .postagem-centro {
   margin: 15px;
   display: flex;
@@ -16,7 +11,7 @@
 }
 
 #perfilLateral {
-  height: 500px;
+  height: 480px;
   left: 0;
   width: 100%;
 }
@@ -61,9 +56,8 @@ label {
 }
 
 .titulocard {
-  text-align: center;
+  text-align: left;
   font-weight: bolder;
-  color: #151515;
 }
 
 .iconcard {
@@ -124,12 +118,10 @@ label {
 
 .postfonth {
   font-weight: bold;
-  color: #000000;
 }
 
 .postfonth1 {
   font-weight: bold;
-  color: #000000;
   text-align: center;
   margin-bottom: 0px;
 }
@@ -139,6 +131,14 @@ label {
 }
 
 .tema-font {
+  text-align: right;
+  font-size: small;
+  font-weight: bold;
+  color: #a5a4a4d7;
+  margin-top: 15px;
+}
+
+.text-muted{
   text-align: right;
   font-size: small;
   font-weight: bold;
@@ -250,9 +250,9 @@ background:rgb(116, 3, 3);
 /*botoes*/
 
 .list {
+  color: black;
   list-style: none;
-  line-height: 50px;
-  font-size: 14px;
+  font-size: 12pt;
   text-decoration: none;
 
 }
@@ -288,7 +288,6 @@ margin: auto;
 
 /*card amigos*/
 #titulo-amigos{
-  color: #61297c;
   font-weight: bold;
 }
 
@@ -324,6 +323,65 @@ hr {
 
 /*card amigos*/
 
+/*card campanhas*/
+#titulo-campanhas{
+  font-weight: bold;
+}
+
+.doar{
+    background: #61297c;
+    font-size: 10pt;
+    font-weight: 500;
+    box-shadow: #d6d2c4 5px 5px 7px;
+    color: #ffffff;
+    height: 31px;
+    border-radius: 22px
+  
+}
+
+/*icones postagem*/
+.socials img {
+  height: 25px;
+  width: 25px;
+  padding: 3px;
+  margin-right: 14px;
+  color: #d2c8c8;
+  cursor: pointer
+}
+
+.socials img:hover {
+  transform: scale(1.5);
+  transition: transform 0.3s ease-out;
+  cursor: pointer;
+}
+
+
+.form-control{
+  font-size: 10pt;
+  font-weight: 500;
+  box-shadow: #d6d2c4 5px 5px 7px;
+  height: 31px;
+  border-radius: 22px
+}
+
+/*menu*/
+.colorFont{
+    
+  color: #61297c
+
+}
+
+.selecao {
+  transition: all 0.5s;
+  cursor: pointer
+}
+
+.selecao:hover{
+      -webkit-filter: drop-shadow(15px 10px 5px rgba(0,0,0,.4));
+      filter: drop-shadow(9px 10px 5px rgba(0,0,0,.4));
+      
+      color:#ff147c
+}
 
 
 
