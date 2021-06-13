@@ -7,13 +7,13 @@
         <!--div do formulario-->
         <div class="col-md-6 mt-5 mb-5">
             <div class="row d-flex justify-content-center">
-                <div class="col-md-10">
+                <div class="col-md-6">
 
                     <!--Logo-->
                     <div class="d-flex justify-content-center mb-4">
                       <img
-                        style="width: 25%"
-                        class="d-flex justify-content-center"
+                        style="width: 100px"
+                        class="d-flex justify-content-center" routerLink='/home'
                         src="https://i.imgur.com/5KOEUob.png"
                         alt="Logo repassa"
                       />
@@ -21,7 +21,8 @@
                     <!--Logo-->
 
                     <!--texto-->
-                    <h1 class="text-center">Cadastre-se</h1>
+                    <h3 class="text-center">Cadastre-se</h3>
+                    <hr>
                     <!--texto-->
 
                     <!--Formulario-->
@@ -56,11 +57,19 @@
 
                     <!--botões-->
 
-                    <hr class="mt-4 mb-2">
-                    
-                    <div class="mt-5 d-flex justify-content-center">
+                    <div class="mt-4 d-flex justify-content-center">
                         <button type="submit" class="btn mr-4" id="botaoCancelar" routerLink='/home'>Voltar</button>
                         <button  (click)='cadastrar()' type="submit" class="btn">Cadastrar</button>
+
+                    </div>
+
+                    <div>
+                        <hr class="mt-4 mb-2">
+
+                        <p class="text-center">
+                            Já tem cadastro?  
+                            <a id="linkfora" routerLink="/logar">Faça login</a>
+                        </p>
                     </div>
                     <!--botões-->
                 </div>

@@ -18,7 +18,7 @@ import { UserEditComponent } from './edit/user-edit/user-edit.component';
 
 
 const routes: Routes = [
-  {path: '', redirectTo: 'logar', pathMatch: 'full'},
+  {path: '', redirectTo: 'home', pathMatch: 'full'},
 
  {path: 'logar', component: DenyLoginComponent},
  {path: 'cadastrar', component: CadastroComponent},

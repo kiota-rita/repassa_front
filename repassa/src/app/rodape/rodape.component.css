@@ -59,3 +59,16 @@ ul.social-network li{
     color: #61297c;
     font-weight: 500;
   }
+
+  .text{
+      font-size: 10pt;
+  }
+
+  .form-control{
+    font-size: 12pt;
+    border-radius: 10px;
+    width: 350pt;
+    box-shadow: #d6d2c4 5px 5px 7px;
+    color: white;
+    font-weight: 500;
+  }

@@ -24,7 +24,7 @@
 }
 
 #botaoentrar {
-    background: #4f2166;
+    background: #61297c;
     font-size: 12pt;
     border-radius: 10px;
     width: 100pt;
@@ -34,10 +34,10 @@
 }
 #botaoentrar:hover {
     background: #fedc18;
-    color: #4f2166;
+    color: black;
   }
 
 #linkfora{
-    color: #4f2166;
+    color: #61297c;
     font-weight: 700;
 }
