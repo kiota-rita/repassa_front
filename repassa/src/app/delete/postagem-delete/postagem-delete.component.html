@@ -29,13 +29,14 @@
                 <div class="card-header color-header border-secondary">
                     
                         <div class="d-flex justify-content-between align-items-center ">
+                            <div class="d-flex justify-content-between align-items-center ">
                             <div class="mr-2">
 
                                 <img class="rounded-circle" src="{{postagem.email.foto}}" alt="Imagem do user" width="50px"
                                     height="50px" class="rounded-circle">
                             </div>
                             <div class="ml-2 mt-2">
-                                <div class="h5 m-0 postfonth"></div>
+                                <div class="h5 m-0 postfonth">{{postagem.email.nome}}</div>
                                 <div class="h7 text-muted">
                                     <p class="text-muted"> <i class="fa fa-clock-o" aria-hidden="true"></i>{{postagem.data |
                                         date: 'dd/MM/yyyy'}} às
@@ -53,6 +54,7 @@
 
                             </h5>
                         </div>
+                    </div>
                     
                 </div>
                 <div class="card-body text-center">
