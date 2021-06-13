@@ -29,7 +29,7 @@
 
           <!--BotãoEntrar-->
           <li class="nav-item">
-          <button class="btn follow ml-3" type="submit">Sair</button>
+          <button routerLink='/home' class="btn follow ml-3" type="submit">Sair</button>
           </li>
           <!--BotãoEntrar-->
       </ul>
@@ -50,7 +50,7 @@
           </div>
           <ul class="list pl-0">
             <li>Perfil</li>
-            <li><a>Editar perfil</a></li>
+            <li><a class="edit-perfil" [routerLink]="['/user-edit', id]" >Editar perfil</a></li>
             <li>Amigos</li>
             <li>Configurações</li>
           </ul>
@@ -102,7 +102,6 @@
         <div class="tab-pane fade show active" id="todasPostagens" role="tabpanel"
           aria-labelledby="nav-todasPostagens-tab">
           
-          <!-- /Todas as Postagens -->
           <div class="row align-items-center">
   
             <div class="card border-secondary mt-3 mb-3 w-100 bodypost"
@@ -118,7 +117,7 @@
                         height="50px" class="rounded-circle">
                     </div>
                     <div class="ml-2 mt-2">
-                      <div class="h5 m-0 postfonth">{{nome}}</div>
+                      <div class="h5 m-0 postfonth">{{item.email.nome}}</div>
                       <div>
                         <p class="text-muted"> <i class="fa fa-clock-o" aria-hidden="true"></i>{{item.data |
                           date: 'dd/MM/yyyy'}} às
@@ -166,7 +165,7 @@
                           height="50px" class="rounded-circle">
                       </div>
                       <div class="ml-2 mt-2">
-                        <div class="h5 m-0 postfonth"></div>
+                        <div class="h5 m-0 postfonth">{{nome}}</div>
                         <div class="h7 text-muted">
                           <p class="text-muted"> <i class="fa fa-clock-o" aria-hidden="true"></i>{{item.data | date:
                             'dd/MM/yyyy'}} às
@@ -175,7 +174,7 @@
                       </div>
                     </div>
                     <div class="dropdown">
-                      <button class="btn btn-light dropdown-toggle mb-5" type="button" id="gedf-drop1"
+                      <button class="btn btn-light dropdown-toggle mt-0" type="button" id="gedf-drop1"
                         data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         <i class="fa fa-ellipsis-h"></i>
                       </button>
@@ -188,12 +187,12 @@
                       </div>
                     </div>
                   </div>
-
-                  <h5 class="mtema m-0">
-  
-                    <span class="tema-font">tema:{{item.tema.descricao}}</span> <img src="" class="iconcard1">
+                  <div class="d-flex justify-content-end mt-0">
+                  <h5 class="mtema">
+                    <span class="tema-font">Tema: {{item.tema.descricao}}</span> <img src="" class="iconcard1">
   
                   </h5>
+                </div>
                 </div>
   
                 <div class="card-body text-center">
@@ -294,7 +293,7 @@
   
             <label for="texto" class="modaltitle">Texto</label>
             <textarea [(ngModel)]='postagem.texto' class="form-control" name="texto" id="texto" rows="3"
-              placeholder="O que você está pensando,?"></textarea>
+              placeholder="O que você está pensando?"></textarea>
   
             <label for="imagem" class="modaltitle">Imagem</label>
             <input [(ngModel)]='postagem.img' type="text" class="form-control" id="imagem" placeholder="Imagem" />

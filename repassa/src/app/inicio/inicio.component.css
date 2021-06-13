@@ -20,6 +20,18 @@
     align-items: center!important;
 }
 
+.edit-perfil {
+  color: #000000;
+  text-decoration: none;
+}
+
+.edit-perfil:hover{
+  border: none;
+  color:#61297c;
+  cursor: pointer;
+  text-decoration: none;
+}
+
 
 .tm-img1 {
   width: 50px;
@@ -153,6 +165,7 @@ label {
   color: #161616;
   margin-top: 15px;
 }
+
 
 li{
   list-style-type: none;
