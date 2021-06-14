@@ -6,6 +6,8 @@ A repassa tem o propósito de dar novos significados a itens seminovos, como mó
 Nosso objetivo é conectar pessoas que estão buscando por doações à pessoas procurando se desapegar de itens que não utilizam mais, estimulando assim o reaproveitamento de itens que poderiam ser descartados de forma indevida, dessa forma, contribuimos com a sociedade e o meio ambiente para resuzir o impacto ambiental no planeta.
 A repassa também promove um espaço para divulgar campanhas de assistência social idealizadas para comunidades como por exemplo: Campanha do agasalho.
 
+Acesse aqui: [repassa](https://repassa.netlify.app)
+
 ### 💻 Tecnologias:
 * Front end: Angular + Typescript + Bootstrap
 * Back end: API restful em Spring boot, Java 11
