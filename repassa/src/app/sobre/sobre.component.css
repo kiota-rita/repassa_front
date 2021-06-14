@@ -45,17 +45,17 @@
 
     .content .textBox a{
         background: #fedc18;
-        font-size: 17pt;
+        font-size: 12pt;
         border-radius: 20px;
         width: 115pt;
         box-shadow: #d6d2c4 5px 5px 7px;
         color: #61297c;
-        font-weight: 900px;
+        font-weight: 500;
         }
 
         .content .textBox a:hover{
             background: #e7bd00f6;
-            color: #ff147c;
+            color: black;
         }
     
 

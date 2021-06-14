@@ -30,3 +30,15 @@
     background: #fedc18;
     color: #401c52;
 }
+
+.postfonth {
+  font-weight: bold;
+}
+
+.tema-font {
+    text-align: right;
+    font-size: small;
+    font-weight: bold;
+    color: #a5a4a4d7;
+    margin-top: 15px;
+  }

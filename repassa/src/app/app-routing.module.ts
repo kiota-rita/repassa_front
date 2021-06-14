@@ -14,11 +14,12 @@ import { PostagemDeleteComponent } from './delete/postagem-delete/postagem-delet
 
 import { SobreComponent } from './sobre/sobre.component';
 import { UserEditComponent } from './edit/user-edit/user-edit.component';
+import { EquipeComponent } from './equipe/equipe.component';
 
 
 
 const routes: Routes = [
-  {path: '', redirectTo: 'logar', pathMatch: 'full'},
+  {path: '', redirectTo: 'home', pathMatch: 'full'},
 
  {path: 'logar', component: DenyLoginComponent},
  {path: 'cadastrar', component: CadastroComponent},
@@ -31,7 +32,8 @@ const routes: Routes = [
  {path: 'postagem-edit/:id', component: PostagemEditComponent},
  {path: 'postagem-delete/:id', component: PostagemDeleteComponent},
  {path: 'user-edit/:id', component: UserEditComponent},
- {path: 'sobre', component: SobreComponent}
+ {path: 'sobre', component: SobreComponent},
+ {path: 'equipe', component: EquipeComponent}
 
 
 ];
